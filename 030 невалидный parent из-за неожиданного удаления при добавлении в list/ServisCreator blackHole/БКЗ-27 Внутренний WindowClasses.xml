@@ -1,0 +1,284 @@
+<body>
+
+<WindowClass name="БКЗ-27 Эмулятор внутренний">
+  <Import type="WindowClass" name="эмулятор: есть в МУП БКЗ, МУП МДК, МДК" policy="" modification="replace '[captionAdd]' ' МУП БКЗ';&#xa;replace '[категория параметра или кадра]' 'БКЗ_27:1::МУП_БКЗ:0';&#xa;replace '[вкладка]' 'МУП БКЗ';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор: есть в МУП БКЗ, МУП МДК, МДК" policy="" modification="replace '[captionAdd]' ' МУП МДК';&#xa;replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС__7_1:1::МУП_МДК:1';&#xa;replace '[вкладка]' 'МВДС-7-1';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор: есть в МУП БКЗ, МУП МДК, МДК" policy="" modification="replace '[captionAdd]' ' МУП МДК';&#xa;replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС__7_2:2::МУП_МДК:1';&#xa;replace '[вкладка]' 'МВДС-7-2';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор: есть в МУП БКЗ, МУП МДК, МДК" policy="" modification="replace '[captionAdd]' ' МУП МДК';&#xa;replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС_20_1:3::МУП_МДК:1';&#xa;replace '[вкладка]' 'МВДС-20-1';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор: есть в МУП БКЗ, МУП МДК, МДК" policy="" modification="replace '[captionAdd]' ' МУП МДК';&#xa;replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС_20_2:4::МУП_МДК:1';&#xa;replace '[вкладка]' 'МВДС-20-2';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор: есть в МУП БКЗ, МУП МДК, МДК" policy="" modification="replace '[captionAdd]' ' МУП МДК';&#xa;replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС_40__:5::МУП_МДК:1';&#xa;replace '[вкладка]' 'МВДС-40';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор: есть в МУП БКЗ, МУП МДК, МДК" policy="" modification="replace '[captionAdd]' ' МДК';&#xa;replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС__7_1:1::МДК:2';&#xa;replace '[вкладка]' 'МВДС-7-1';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор: есть в МУП БКЗ, МУП МДК, МДК" policy="" modification="replace '[captionAdd]' ' МДК';&#xa;replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС__7_2:2::МДК:2';&#xa;replace '[вкладка]' 'МВДС-7-2';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор: есть в МУП БКЗ, МУП МДК, МДК" policy="" modification="replace '[captionAdd]' ' МДК';&#xa;replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС_20_1:3::МДК:2';&#xa;replace '[вкладка]' 'МВДС-20-1';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор: есть в МУП БКЗ, МУП МДК, МДК" policy="" modification="replace '[captionAdd]' ' МДК';&#xa;replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС_20_2:4::МДК:2';&#xa;replace '[вкладка]' 'МВДС-20-2';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор: есть в МУП БКЗ, МУП МДК, МДК" policy="" modification="replace '[captionAdd]' ' МДК';&#xa;replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС_40__:5::МДК:2';&#xa;replace '[вкладка]' 'МВДС-40';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор: есть в МУП БКЗ, МУП МДК" policy="" modification="replace '[captionAdd]' ' МУП БКЗ';&#xa;replace '[категория параметра или кадра]' 'БКЗ_27:1::МУП_БКЗ:0';&#xa;replace '[вкладка]' 'МУП БКЗ';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор: есть в МУП БКЗ, МУП МДК" policy="" modification="replace '[captionAdd]' ' МУП МДК';&#xa;replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС__7_1:1::МУП_МДК:1';&#xa;replace '[вкладка]' 'МВДС-7-1';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор: есть в МУП БКЗ, МУП МДК" policy="" modification="replace '[captionAdd]' ' МУП МДК';&#xa;replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС__7_2:2::МУП_МДК:1';&#xa;replace '[вкладка]' 'МВДС-7-2';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор: есть в МУП БКЗ, МУП МДК" policy="" modification="replace '[captionAdd]' ' МУП МДК';&#xa;replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС_20_1:3::МУП_МДК:1';&#xa;replace '[вкладка]' 'МВДС-20-1';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор: есть в МУП БКЗ, МУП МДК" policy="" modification="replace '[captionAdd]' ' МУП МДК';&#xa;replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС_20_2:4::МУП_МДК:1';&#xa;replace '[вкладка]' 'МВДС-20-2';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор: есть в МУП БКЗ, МУП МДК" policy="" modification="replace '[captionAdd]' ' МУП МДК';&#xa;replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС_40__:5::МУП_МДК:1';&#xa;replace '[вкладка]' 'МВДС-40';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор: ТолькоМупБКЗ" policy="" modification="" postModification=""/>
+</WindowClass>
+
+<WindowClass name="эмулятор: ТолькоМупБКЗ">
+  <Widget param="БКЗ_27:1::МУП_БКЗ:0::времяНаработки" worker="" idWidget="" tabName="МУП БКЗ" tableName="" caption="Время наработки" viewWidg="QLabel" ctrlWidg="EditButton b1 'Установить';"/>
+  <Widget param="" worker="БКЗ_27:1::МУП_БКЗ:0::времяНаработкиЧтениеОтвет_" idWidget="" tabName="МУП БКЗ" tableName="" caption="Время наработки запрос" viewWidg="" ctrlWidg="QCheckBox chBoxError 'Ошибка'; QPushButton кнопка 'Отправить';&#xa;Обработчик chBoxError flagError = chBoxError;"/>
+  <Widget param="" worker="БКЗ_27:1::МУП_БКЗ:0::времяНаработкиСброс_Ответ_" idWidget="" tabName="МУП БКЗ" tableName="" caption="Время наработки сброс" viewWidg="" ctrlWidg="QCheckBox chBoxError 'Ошибка'; QPushButton кнопка 'Сбросить';&#xa;Обработчик chBoxError flagError = chBoxError;"/>
+</WindowClass>
+
+<WindowClass name="сервис: ТолькоМупБКЗ">
+  <Widget param="" worker="БКЗ_27:1::МУП_БКЗ:0::времяНаработкиЧтениеЗапрос" idWidget="" tabName="МУП БКЗ" tableName="" caption="Время наработки" viewWidg="" ctrlWidg="QPushButton b 'Запросить';"/>
+  <Widget param="" worker="БКЗ_27:1::МУП_БКЗ:0::времяНаработкиСброс_Запрос" idWidget="" tabName="МУП БКЗ" tableName="" caption="Время наработки сброс" viewWidg="" ctrlWidg="QPushButton b 'Отправить команду';"/>
+  <Widget param="БКЗ_27:1::МУП_БКЗ:0::времяНаработки" worker="" idWidget="" tabName="МУП БКЗ" tableName="" caption="Время наработки" viewWidg="QLabel" ctrlWidg=""/>
+</WindowClass>
+
+<WindowClass name="БКЗ-27 Сервис внутренний">
+  <Import type="WindowClass" name="БКЗ-27 Эмулятор внутренний" policy="no deep import" modification="replace 'эмулятор: ' 'сервис: ';" postModification=""/>
+</WindowClass>
+
+<WindowClass name="эмулятор_каналы">
+  <Import type="WindowClass" name="каналыМВДС_7" policy="" modification="replace 'меткаКатегория' 'БКЗ_27:1::МВДС__7_1:1::Каналы::1'; replace 'вкладка' 'МВДС__7_1'; replace 'таблица' 'МВДС__7_1'" postModification=""/>
+  <Import type="WindowClass" name="каналыМВДС_7" policy="" modification="replace 'меткаКатегория' 'БКЗ_27:1::МВДС__7_2:2::Каналы::1'; replace 'вкладка' 'МВДС__7_2'; replace 'таблица' 'МВДС__7_2'" postModification=""/>
+  <Import type="WindowClass" name="каналыМВДС20" policy="" modification="replace 'меткаКатегория' 'БКЗ_27:1::МВДС_20_1:3::Каналы::1'; replace 'вкладка' 'МВДС_20_1'; replace 'таблица' 'МВДС_20_1'" postModification=""/>
+  <Import type="WindowClass" name="каналыМВДС20" policy="" modification="replace 'меткаКатегория' 'БКЗ_27:1::МВДС_20_2:4::Каналы::1'; replace 'вкладка' 'МВДС_20_2'; replace 'таблица' 'МВДС_20_2'" postModification=""/>
+  <Import type="WindowClass" name="каналыМВДС40" policy="" modification="replace 'меткаКатегория' 'БКЗ_27:1::МВДС_40__:5::Каналы::1'; replace 'вкладка' 'МВДС_40__'; replace 'таблица' 'МВДС_40__'" postModification=""/>
+</WindowClass>
+
+<WindowClass name="сервис_каналы">
+  <Import type="WindowClass" name="сервис_управление_каналами" policy="" modification="" postModification=""/>
+  <Import type="WindowClass" name="эмулятор_каналы" policy="" modification="set ctrlWidg ''" postModification=""/>
+</WindowClass>
+
+<WindowClass name="сервис_управление_каналами">
+  <Widget param="" worker="БКЗ_27:1::МВДС__7_1:1::МУП_МДК:1::включение_каналов_запрос" idWidget="" tabName="МВДС__7_1" tableName="" caption="Управление каналами" viewWidg="" ctrlWidg="ГалочкиИКнопка гк '' '' '' '' '' '' '' '' '' '' '' '' '' '' 'Отправить';&#xa;Обработчик гк newValues = гк;"/>
+  <Widget param="" worker="БКЗ_27:1::МВДС__7_2:2::МУП_МДК:1::включение_каналов_запрос" idWidget="" tabName="МВДС__7_2" tableName="" caption="Управление каналами" viewWidg="" ctrlWidg="ГалочкиИКнопка гк '' '' '' '' '' '' '' '' '' '' '' '' '' '' 'Отправить';&#xa;Обработчик гк newValues = гк;"/>
+  <Widget param="" worker="БКЗ_27:1::МВДС_20_1:3::МУП_МДК:1::включение_каналов_запрос" idWidget="" tabName="МВДС_20_1" tableName="" caption="Управление каналами" viewWidg="" ctrlWidg="ГалочкиИКнопка гк '' '' '' '' '' '' '' '' 'Отправить';&#xa;Обработчик гк newValues = гк;"/>
+  <Widget param="" worker="БКЗ_27:1::МВДС_20_2:4::МУП_МДК:1::включение_каналов_запрос" idWidget="" tabName="МВДС_20_2" tableName="" caption="Управление каналами" viewWidg="" ctrlWidg="ГалочкиИКнопка гк '' '' '' '' '' '' '' '' 'Отправить';&#xa;Обработчик гк newValues = гк;"/>
+  <Widget param="" worker="БКЗ_27:1::МВДС_40__:5::МУП_МДК:1::включение_каналов_запрос" idWidget="" tabName="МВДС_40__" tableName="" caption="Управление каналами" viewWidg="" ctrlWidg="ГалочкиИКнопка гк '' '' '' '' 'Отправить';&#xa;Обработчик гк newValues = гк;"/>
+</WindowClass>
+
+<WindowClass name="каналыМВДС_7">
+  <Import type="WindowClass" name="канал_внутренний" policy="" modification="count 14; replace 'меткаНомерКанала' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11' '12' '13' '14'" postModification=""/>
+</WindowClass>
+
+<WindowClass name="каналыМВДС20">
+  <Import type="WindowClass" name="канал_внутренний" policy="" modification="count 8; replace 'меткаНомерКанала' '1' '2' '3' '4' '5' '6' '7' '8'" postModification=""/>
+</WindowClass>
+
+<WindowClass name="каналыМВДС40">
+  <Import type="WindowClass" name="канал_внутренний" policy="" modification="count 4; replace 'меткаНомерКанала' '1' '2' '3' '4'" postModification=""/>
+</WindowClass>
+
+<WindowClass name="канал_внутренний">
+  <Widget param="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала::Номер" worker="" idWidget="" tabName="вкладка" tableName="таблица" caption="Номер" viewWidg="QLabel" ctrlWidg=""/>
+  <Widget param="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала::Уставка_вОЗУ" worker="" idWidget="" tabName="вкладка" tableName="таблица" caption="Уставка_вОЗУ" viewWidg="QLabel" ctrlWidg="EditButton eb1 'Установить';"/>
+  <Widget param="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала::Уставки_вПЗУ" worker="" idWidget="" tabName="вкладка" tableName="таблица" caption="Уставки_вПЗУ" viewWidg="QLabel" ctrlWidg="EditButton eb1 'Установить';"/>
+  <Widget param="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала::Тип_вОЗУ" worker="" idWidget="" tabName="вкладка" tableName="таблица" caption="Тип_вОЗУ" viewWidg="QLabel" ctrlWidg="EditButton eb1 'Установить';"/>
+  <Widget param="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала::Типы_вПЗУ" worker="" idWidget="" tabName="вкладка" tableName="таблица" caption="Типы_вПЗУ" viewWidg="QLabel" ctrlWidg="EditButton eb1 'Установить';"/>
+  <Widget param="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала::Коэфф_АвОЗУ" worker="" idWidget="" tabName="вкладка" tableName="таблица" caption="Коэфф_АвОЗУ" viewWidg="QLabel" ctrlWidg="EditButton eb1 'Установить';"/>
+  <Widget param="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала::Коэфф_АвПЗУ" worker="" idWidget="" tabName="вкладка" tableName="таблица" caption="Коэфф_АвПЗУ" viewWidg="QLabel" ctrlWidg="EditButton eb1 'Установить';"/>
+  <Widget param="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала::Коэфф_BвОЗУ" worker="" idWidget="" tabName="вкладка" tableName="таблица" caption="Коэфф_BвОЗУ" viewWidg="QLabel" ctrlWidg="EditButton eb1 'Установить';"/>
+  <Widget param="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала::Коэфф_BвПЗУ" worker="" idWidget="" tabName="вкладка" tableName="таблица" caption="Коэфф_BвПЗУ" viewWidg="QLabel" ctrlWidg="EditButton eb1 'Установить';"/>
+  <Widget param="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала::Коэфф_CвОЗУ" worker="" idWidget="" tabName="вкладка" tableName="таблица" caption="Коэфф_CвОЗУ" viewWidg="QLabel" ctrlWidg="EditButton eb1 'Установить';"/>
+  <Widget param="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала::Коэфф_CвПЗУ" worker="" idWidget="" tabName="вкладка" tableName="таблица" caption="Коэфф_CвПЗУ" viewWidg="QLabel" ctrlWidg="EditButton eb1 'Установить';"/>
+  <Widget param="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала::ВклОткл" worker="" idWidget="" tabName="вкладка" tableName="таблица" caption="ВклОткл" viewWidg="QLabel" ctrlWidg="Buttons b1 '0' '1'"/>
+  <Widget param="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала::НормаОтказ" worker="" idWidget="" tabName="вкладка" tableName="таблица" caption="НормаОтказ" viewWidg="QLabel" ctrlWidg="Buttons b1 '0' '1'"/>
+  <Widget param="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала::ПерегрузкаПуск" worker="" idWidget="" tabName="вкладка" tableName="таблица" caption="ПерегрузкаПуск" viewWidg="QLabel" ctrlWidg="Buttons b1 '0' '1'"/>
+  <Widget param="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала::ПерегрузкаУстанов" worker="" idWidget="" tabName="вкладка" tableName="таблица" caption="ПерегрузкаУстанов" viewWidg="QLabel" ctrlWidg="Buttons b1 '0' '1'"/>
+  <Widget param="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала::КороткоеЗамыкание" worker="" idWidget="" tabName="вкладка" tableName="таблица" caption="КороткоеЗамыкание" viewWidg="QLabel" ctrlWidg="Buttons b1 '0' '1'"/>
+  <Widget param="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала::UвыхНаличие" worker="" idWidget="" tabName="вкладка" tableName="таблица" caption="UвыхНаличие" viewWidg="QLabel" ctrlWidg="Buttons b1 '0' '1'"/>
+  <Widget param="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала::UвыхОтказ" worker="" idWidget="" tabName="вкладка" tableName="таблица" caption="UвыхОтказ" viewWidg="QLabel" ctrlWidg="Buttons b1 '0' '1'"/>
+  <Widget param="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала::Ток" worker="" idWidget="" tabName="вкладка" tableName="таблица" caption="Ток" viewWidg="QLabel" ctrlWidg="EditButton b1 'Установить';"/>
+</WindowClass>
+
+<WindowClass name="эмулятор_ВСК_блока">
+  <Import type="WindowClass" name="эмулятор_ВСК_МУП_БКЗ" policy="" modification="" postModification=""/>
+  <Import type="WindowClass" name="эмулятор_ВСК_МУП_МДК" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС__7_1:1::МУП_МДК:1';&#xa;replace '[вкладка]' 'МВДС-7-1';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор_ВСК_МУП_МДК" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС__7_2:2::МУП_МДК:1';&#xa;replace '[вкладка]' 'МВДС-7-2';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор_ВСК_МУП_МДК" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС_20_1:3::МУП_МДК:1';&#xa;replace '[вкладка]' 'МВДС-20-1';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор_ВСК_МУП_МДК" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС_20_2:4::МУП_МДК:1';&#xa;replace '[вкладка]' 'МВДС-20-2';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор_ВСК_МУП_МДК" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС_40__:5::МУП_МДК:1';&#xa;replace '[вкладка]' 'МВДС-40';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор_ВСК_МДК" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС__7_1:1::МДК:2';&#xa;replace '[вкладка]' 'МВДС-7-1';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор_ВСК_МДК" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС__7_2:2::МДК:2';&#xa;replace '[вкладка]' 'МВДС-7-2';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор_ВСК_МДК" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС_20_1:3::МДК:2';&#xa;replace '[вкладка]' 'МВДС-20-1';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор_ВСК_МДК" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС_20_2:4::МДК:2';&#xa;replace '[вкладка]' 'МВДС-20-2';" postModification=""/>
+  <Import type="WindowClass" name="эмулятор_ВСК_МДК" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ_27:1::МВДС_40__:5::МДК:2';&#xa;replace '[вкладка]' 'МВДС-40';" postModification=""/>
+</WindowClass>
+
+<WindowClass name="сервис_ВСК_блока">
+  <Import type="WindowClass" name="эмулятор_ВСК_блока" policy="no deep import" modification="replace 'эмулятор_' 'сервис_';" postModification=""/>
+</WindowClass>
+
+<WindowClass name="эмулятор_ВСК_МУП_БКЗ">
+  <Widget param="БКЗ_27:1::МУП_БКЗ:0::ВСК_питаний_CANExt" worker="" idWidget="" tabName="МУП БКЗ" tableName="" caption="ВСК_питаний_CANExt" viewWidg="QLabel" ctrlWidg="Buttons b1 '0' '1'"/>
+  <Widget param="БКЗ_27:1::МУП_БКЗ:0::ВСК_питаний_27ВО" worker="" idWidget="" tabName="МУП БКЗ" tableName="" caption="ВСК_питаний_27ВО" viewWidg="QLabel" ctrlWidg="Buttons b1 '0' '1'"/>
+  <Widget param="БКЗ_27:1::МУП_БКЗ:0::ВСК_питаний_27ВР" worker="" idWidget="" tabName="МУП БКЗ" tableName="" caption="ВСК_питаний_27ВР" viewWidg="QLabel" ctrlWidg="Buttons b1 '0' '1'"/>
+  <Widget param="" worker="БКЗ_27:1::МУП_БКЗ:0::ответ_ВскМупБКЗ_1" idWidget="" tabName="МУП БКЗ" tableName="" caption="Ответ на запрос 1" viewWidg="" ctrlWidg="QPushButton кнопка 'Отправить';"/>
+  <Widget param="БКЗ_27:1::МУП_БКЗ:0::ВСК_питаний_U_3_6" worker="" idWidget="" tabName="МУП БКЗ" tableName="" caption="ВСК_питаний_U_3_6" viewWidg="QLabel" ctrlWidg="EditButton b1 'Установить';"/>
+  <Widget param="БКЗ_27:1::МУП_БКЗ:0::ВСК_питаний_U_3_4" worker="" idWidget="" tabName="МУП БКЗ" tableName="" caption="ВСК_питаний_U_3_4" viewWidg="QLabel" ctrlWidg="EditButton b1 'Установить';"/>
+  <Widget param="" worker="БКЗ_27:1::МУП_БКЗ:0::ответ_ВскМупБКЗ_2" idWidget="" tabName="МУП БКЗ" tableName="" caption="Ответ на запрос 2" viewWidg="" ctrlWidg="QPushButton кнопка 'Отправить';"/>
+  <Widget param="БКЗ_27:1::МУП_БКЗ:0::ВСК_питаний_U_5_osn" worker="" idWidget="" tabName="МУП БКЗ" tableName="" caption="ВСК_питаний_U_5_osn" viewWidg="QLabel" ctrlWidg="EditButton b1 'Установить';"/>
+  <Widget param="БКЗ_27:1::МУП_БКЗ:0::ВСК_питаний_U_5_res" worker="" idWidget="" tabName="МУП БКЗ" tableName="" caption="ВСК_питаний_U_5_res" viewWidg="QLabel" ctrlWidg="EditButton b1 'Установить';"/>
+  <Widget param="" worker="БКЗ_27:1::МУП_БКЗ:0::ответ_ВскМупБКЗ_3" idWidget="" tabName="МУП БКЗ" tableName="" caption="Ответ на запрос 3" viewWidg="" ctrlWidg="QPushButton кнопка 'Отправить';"/>
+  <Widget param="БКЗ_27:1::МУП_БКЗ:0::ВСК_питаний_U_CANвнутр" worker="" idWidget="" tabName="МУП БКЗ" tableName="" caption="ВСК_питаний_CANвнутр" viewWidg="QLabel" ctrlWidg="EditButton b1 'Установить';"/>
+  <Widget param="БКЗ_27:1::МУП_БКЗ:0::ВСК_питаний_КонтрольОпорн" worker="" idWidget="" tabName="МУП БКЗ" tableName="" caption="ВСК_питаний_КонтрольОпорн" viewWidg="QLabel" ctrlWidg="EditButton b1 'Установить';"/>
+  <Widget param="" worker="БКЗ_27:1::МУП_БКЗ:0::ответ_ВскМупБКЗ_4" idWidget="" tabName="МУП БКЗ" tableName="" caption="Ответ на запрос 4" viewWidg="" ctrlWidg="QPushButton кнопка 'Отправить';"/>
+</WindowClass>
+
+<WindowClass name="эмулятор_ВСК_МУП_МДК">
+  <Widget param="[категория параметра или кадра]::ВСК_питаний_U_3_6" worker="" idWidget="" tabName="[вкладка]" tableName="" caption="ВСК_питаний_U_3_6" viewWidg="QLabel" ctrlWidg="Buttons b1 '0' '1'"/>
+  <Widget param="[категория параметра или кадра]::ВСК_питаний_КонтрольОпорн" worker="" idWidget="" tabName="[вкладка]" tableName="" caption="ВСК_питаний_КонтрольОпорн" viewWidg="QLabel" ctrlWidg="EditButton b1 'Установить'&#xa;"/>
+  <Widget param="" worker="[категория параметра или кадра]::ответ_ВскМупМДК" idWidget="" tabName="[вкладка]" tableName="" caption="Ответ ВСК МУП МДК" viewWidg="" ctrlWidg="QPushButton кнопка 'Отправить';&#xa;"/>
+  <Widget param="[категория параметра или кадра]::ВСК_модуляМВДС_UвхСил" worker="" idWidget="" tabName="[вкладка]" tableName="" caption="ВСК_модуляМВДС_UвхСил" viewWidg="QLabel" ctrlWidg="Buttons b1 '0' '1'"/>
+  <Widget param="" worker="[категория параметра или кадра]::ответ_ВскМвдс" idWidget="" tabName="[вкладка]" tableName="" caption="Ответ ВСК МВДС" viewWidg="" ctrlWidg="QPushButton кнопка 'Отправить';&#xa;"/>
+</WindowClass>
+
+<WindowClass name="эмулятор_ВСК_МДК">
+  <Widget param="[категория параметра или кадра]::3_6_ВСК" worker="" idWidget="" tabName="[вкладка]" tableName="" caption="3_6_ВСК" viewWidg="QLabel" ctrlWidg="Buttons b1 '0' '1'"/>
+  <Widget param="[категория параметра или кадра]::3_6_ВМК" worker="" idWidget="" tabName="[вкладка]" tableName="" caption="3_6_ВМК" viewWidg="QLabel" ctrlWidg="Buttons b1 '0' '1'"/>
+  <Widget param="[категория параметра или кадра]::5_В" worker="" idWidget="" tabName="[вкладка]" tableName="" caption="5_В" viewWidg="QLabel" ctrlWidg="Buttons b1 '0' '1'"/>
+  <Widget param="[категория параметра или кадра]::27_В" worker="" idWidget="" tabName="[вкладка]" tableName="" caption="27_В" viewWidg="QLabel" ctrlWidg="Buttons b1 '0' '1'"/>
+  <Widget param="" worker="[категория параметра или кадра]::ответ_ВскМДК" idWidget="" tabName="[вкладка]" tableName="" caption="Ответ ВСК МДК" viewWidg="" ctrlWidg="QPushButton b 'Отправить';"/>
+</WindowClass>
+
+<WindowClass name="сервис_ВСК_МУП_БКЗ">
+  <Row caption="">
+    <Widget param="" worker="" idWidget="" tabName="МУП БКЗ" tableName="" caption="" viewWidg="QLabel l 'can1 mc1'" ctrlWidg=""/>
+    <Widget param="" worker="" idWidget="" tabName="МУП БКЗ" tableName="" caption="" viewWidg="QLabel l 'can1 mc2'" ctrlWidg=""/>
+    <Widget param="" worker="" idWidget="" tabName="МУП БКЗ" tableName="" caption="" viewWidg="QLabel l 'can2 mc1'" ctrlWidg=""/>
+    <Widget param="" worker="" idWidget="" tabName="МУП БКЗ" tableName="" caption="" viewWidg="QLabel l 'can2 mc2'" ctrlWidg=""/>
+  </Row>
+  <Row caption="Запрос ВСК 1">
+    <Widget param="" worker="Protocol0::БКЗ_27:1::МУП_БКЗ:0::запросВскМупБКЗ_1" idWidget="" tabName="МУП БКЗ" tableName="" caption="" viewWidg="" ctrlWidg="QPushButton b 'Запросить';"/>
+    <Import type="copyPreviousElement" name="" policy="" modification="count 3; replace 'Protocol0' 'Protocol1' 'Protocol2' 'Protocol3';" postModification=""/>
+  </Row>
+  <Row caption="МУП_БКЗ ВСК_питаний_CANExt">
+    <Widget param="Object0::БКЗ_27:1::МУП_БКЗ:0::ВСК_питаний_CANExt" worker="" idWidget="" tabName="МУП БКЗ" tableName="" caption="" viewWidg="QLabel" ctrlWidg=""/>
+    <Import type="copyPreviousElement" name="" policy="" modification="count 3; replace 'Object0' 'Object1' 'Object2' 'Object3';" postModification=""/>
+  </Row>
+  <Row caption="МУП_БКЗ ВСК_питаний_27ВО">
+    <Widget param="Object0::БКЗ_27:1::МУП_БКЗ:0::ВСК_питаний_27ВО" worker="" idWidget="" tabName="МУП БКЗ" tableName="" caption="" viewWidg="QLabel" ctrlWidg=""/>
+    <Import type="copyPreviousElement" name="" policy="" modification="count 3; replace 'Object0' 'Object1' 'Object2' 'Object3';" postModification=""/>
+  </Row>
+  <Row caption="МУП_БКЗ ВСК_питаний_27ВР">
+    <Widget param="Object0::БКЗ_27:1::МУП_БКЗ:0::ВСК_питаний_27ВР" worker="" idWidget="" tabName="МУП БКЗ" tableName="" caption="" viewWidg="QLabel" ctrlWidg=""/>
+    <Import type="copyPreviousElement" name="" policy="" modification="count 3; replace 'Object0' 'Object1' 'Object2' 'Object3';" postModification=""/>
+  </Row>
+  <Row caption="Запрос ВСК 2">
+    <Widget param="" worker="Protocol0::БКЗ_27:1::МУП_БКЗ:0::запросВскМупБКЗ_2" idWidget="" tabName="МУП БКЗ" tableName="" caption="" viewWidg="" ctrlWidg="QPushButton b 'Запросить';"/>
+    <Import type="copyPreviousElement" name="" policy="" modification="count 3; replace 'Protocol0' 'Protocol1' 'Protocol2' 'Protocol3';" postModification=""/>
+  </Row>
+  <Row caption="МУП_БКЗ ВСК_питаний_U_3_6">
+    <Widget param="Object0::БКЗ_27:1::МУП_БКЗ:0::ВСК_питаний_U_3_6" worker="" idWidget="" tabName="МУП БКЗ" tableName="" caption="" viewWidg="QLabel" ctrlWidg=""/>
+    <Import type="copyPreviousElement" name="" policy="" modification="count 3; replace 'Object0' 'Object1' 'Object2' 'Object3';" postModification=""/>
+  </Row>
+  <Row caption="МУП_БКЗ ВСК_питаний_U_3_4">
+    <Widget param="Object0::БКЗ_27:1::МУП_БКЗ:0::ВСК_питаний_U_3_4" worker="" idWidget="" tabName="МУП БКЗ" tableName="" caption="" viewWidg="QLabel" ctrlWidg=""/>
+    <Import type="copyPreviousElement" name="" policy="" modification="count 3; replace 'Object0' 'Object1' 'Object2' 'Object3';" postModification=""/>
+  </Row>
+  <Row caption="Запрос ВСК 3">
+    <Widget param="" worker="Protocol0::БКЗ_27:1::МУП_БКЗ:0::запросВскМупБКЗ_3" idWidget="" tabName="МУП БКЗ" tableName="" caption="" viewWidg="" ctrlWidg="QPushButton b 'Запросить';"/>
+    <Import type="copyPreviousElement" name="" policy="" modification="count 3; replace 'Protocol0' 'Protocol1' 'Protocol2' 'Protocol3';" postModification=""/>
+  </Row>
+  <Row caption="МУП_БКЗ ВСК_питаний_U_5_osn">
+    <Widget param="Object0::БКЗ_27:1::МУП_БКЗ:0::ВСК_питаний_U_5_osn" worker="" idWidget="" tabName="МУП БКЗ" tableName="" caption="" viewWidg="QLabel" ctrlWidg=""/>
+    <Import type="copyPreviousElement" name="" policy="" modification="count 3; replace 'Object0' 'Object1' 'Object2' 'Object3';" postModification=""/>
+  </Row>
+  <Row caption="МУП_БКЗ ВСК_питаний_U_5_res">
+    <Widget param="Object0::БКЗ_27:1::МУП_БКЗ:0::ВСК_питаний_U_5_res" worker="" idWidget="" tabName="МУП БКЗ" tableName="" caption="" viewWidg="QLabel" ctrlWidg=""/>
+    <Import type="copyPreviousElement" name="" policy="" modification="count 3; replace 'Object0' 'Object1' 'Object2' 'Object3';" postModification=""/>
+  </Row>
+  <Row caption="Запрос ВСК 4">
+    <Widget param="" worker="Protocol0::БКЗ_27:1::МУП_БКЗ:0::запросВскМупБКЗ_4" idWidget="" tabName="МУП БКЗ" tableName="" caption="" viewWidg="" ctrlWidg="QPushButton b 'Запросить';"/>
+    <Import type="copyPreviousElement" name="" policy="" modification="count 3; replace 'Protocol0' 'Protocol1' 'Protocol2' 'Protocol3';" postModification=""/>
+  </Row>
+  <Row caption="МУП_БКЗ ВСК_питаний_CANвнутр">
+    <Widget param="Object0::БКЗ_27:1::МУП_БКЗ:0::ВСК_питаний_U_CANвнутр" worker="" idWidget="" tabName="МУП БКЗ" tableName="" caption="" viewWidg="QLabel" ctrlWidg=""/>
+    <Import type="copyPreviousElement" name="" policy="" modification="count 3; replace 'Object0' 'Object1' 'Object2' 'Object3';" postModification=""/>
+  </Row>
+  <Row caption="МУП_БКЗ ВСК_питаний_КонтрольОпорн">
+    <Widget param="Object0::БКЗ_27:1::МУП_БКЗ:0::ВСК_питаний_КонтрольОпорн" worker="" idWidget="" tabName="МУП БКЗ" tableName="" caption="" viewWidg="QLabel" ctrlWidg=""/>
+    <Import type="copyPreviousElement" name="" policy="" modification="count 3; replace 'Object0' 'Object1' 'Object2' 'Object3';" postModification=""/>
+  </Row>
+</WindowClass>
+
+<WindowClass name="сервис_ВСК_МУП_МДК">
+  <Row caption="">
+    <Widget param="" worker="" idWidget="" tabName="[вкладка]" tableName="" caption="" viewWidg="QLabel l 'can1 mc1'" ctrlWidg=""/>
+    <Widget param="" worker="" idWidget="" tabName="[вкладка]" tableName="" caption="" viewWidg="QLabel l 'can1 mc2'" ctrlWidg=""/>
+    <Widget param="" worker="" idWidget="" tabName="[вкладка]" tableName="" caption="" viewWidg="QLabel l 'can2 mc1'" ctrlWidg=""/>
+    <Widget param="" worker="" idWidget="" tabName="[вкладка]" tableName="" caption="" viewWidg="QLabel l 'can2 mc2'" ctrlWidg=""/>
+  </Row>
+  <Row caption="Запрос ВСК МУП МДК">
+    <Widget param="" worker="Protocol0::[категория параметра или кадра]::запросВскМупМДК" idWidget="" tabName="[вкладка]" tableName="" caption="" viewWidg="" ctrlWidg="QPushButton b 'Запросить';"/>
+    <Import type="copyPreviousElement" name="" policy="" modification="count 3; replace 'Protocol0' 'Protocol1' 'Protocol2' 'Protocol3';" postModification=""/>
+  </Row>
+  <Row caption="МУП_МДК ВСК_питаний_U_3_6">
+    <Widget param="Object0::[категория параметра или кадра]::ВСК_питаний_U_3_6" worker="" idWidget="" tabName="[вкладка]" tableName="" caption="" viewWidg="QLabel" ctrlWidg=""/>
+    <Import type="copyPreviousElement" name="" policy="" modification="count 3; replace 'Object0' 'Object1' 'Object2' 'Object3';" postModification=""/>
+  </Row>
+  <Row caption="МУП_МДК ВСК_питаний_КонтрольОпорн">
+    <Widget param="Object0::[категория параметра или кадра]::ВСК_питаний_КонтрольОпорн" worker="" idWidget="" tabName="[вкладка]" tableName="" caption="" viewWidg="QLabel" ctrlWidg=""/>
+    <Import type="copyPreviousElement" name="" policy="" modification="count 3; replace 'Object0' 'Object1' 'Object2' 'Object3';" postModification=""/>
+  </Row>
+  <Row caption="Запрос ВСК МВДС">
+    <Widget param="" worker="Protocol0::[категория параметра или кадра]::запросВскМвдс" idWidget="" tabName="[вкладка]" tableName="" caption="" viewWidg="" ctrlWidg="QPushButton b 'Запросить';"/>
+    <Import type="copyPreviousElement" name="" policy="" modification="count 3; replace 'Protocol0' 'Protocol1' 'Protocol2' 'Protocol3';" postModification=""/>
+  </Row>
+  <Row caption="МУП_МДК ВСК_модуляМВДС_UвхСил">
+    <Widget param="Object0::[категория параметра или кадра]::ВСК_модуляМВДС_UвхСил" worker="" idWidget="" tabName="[вкладка]" tableName="" caption="" viewWidg="QLabel" ctrlWidg=""/>
+    <Import type="copyPreviousElement" name="" policy="" modification="count 3; replace 'Object0' 'Object1' 'Object2' 'Object3';" postModification=""/>
+  </Row>
+</WindowClass>
+
+<WindowClass name="сервис_ВСК_МДК">
+  <Row caption="Запрос ВСК МДК">
+    <Widget param="" worker="Protocol0::[категория параметра или кадра]::запросВскМДК" idWidget="" tabName="[вкладка]" tableName="" caption="" viewWidg="" ctrlWidg="QPushButton b 'Запросить';"/>
+    <Import type="copyPreviousElement" name="" policy="" modification="count 3; replace 'Protocol0' 'Protocol1' 'Protocol2' 'Protocol3';" postModification=""/>
+  </Row>
+  <Row caption="МДК 3_6_ВСК">
+    <Widget param="Object0::[категория параметра или кадра]::3_6_ВСК" worker="" idWidget="" tabName="[вкладка]" tableName="" caption="" viewWidg="QLabel" ctrlWidg=""/>
+    <Import type="copyPreviousElement" name="" policy="" modification="count 3; replace 'Object0' 'Object1' 'Object2' 'Object3';" postModification=""/>
+  </Row>
+  <Row caption="МДК 3_6_ВМК">
+    <Widget param="Object0::[категория параметра или кадра]::3_6_ВМК" worker="" idWidget="" tabName="[вкладка]" tableName="" caption="" viewWidg="QLabel" ctrlWidg=""/>
+    <Import type="copyPreviousElement" name="" policy="" modification="count 3; replace 'Object0' 'Object1' 'Object2' 'Object3';" postModification=""/>
+  </Row>
+  <Row caption="МДК 5_В">
+    <Widget param="Object0::[категория параметра или кадра]::5_В" worker="" idWidget="" tabName="[вкладка]" tableName="" caption="" viewWidg="QLabel" ctrlWidg=""/>
+    <Import type="copyPreviousElement" name="" policy="" modification="count 3; replace 'Object0' 'Object1' 'Object2' 'Object3';" postModification=""/>
+  </Row>
+  <Row caption="МДК 27_В">
+    <Widget param="Object0::[категория параметра или кадра]::27_В" worker="" idWidget="" tabName="[вкладка]" tableName="" caption="" viewWidg="QLabel" ctrlWidg=""/>
+    <Import type="copyPreviousElement" name="" policy="" modification="count 3; replace 'Object0' 'Object1' 'Object2' 'Object3';" postModification=""/>
+  </Row>
+</WindowClass>
+
+<WindowClass name="эмулятор: есть в МУП БКЗ, МУП МДК, МДК">
+  <Widget param="" worker="[категория параметра или кадра]::Рукопожатие ответ" idWidget="" tabName="[вкладка]" tableName="" caption="Рукопожатие[captionAdd]" viewWidg="" ctrlWidg="QPushButton кнопка 'Отправить';&#xa;"/>
+  <Widget param="[категория параметра или кадра]::Режим" worker="" idWidget="" tabName="[вкладка]" tableName="" caption="Режим[captionAdd]" viewWidg="QLabel" ctrlWidg="EditButton b1 'Установить'&#xa;"/>
+  <Widget param="" worker="[категория параметра или кадра]::Режим установка ответ" idWidget="" tabName="[вкладка]" tableName="" caption="Режим[captionAdd]" viewWidg="" ctrlWidg="QPushButton кнопка 'Отправить';&#xa;"/>
+  <Widget param="" worker="[категория параметра или кадра]::Режим запрос ответ" idWidget="" tabName="[вкладка]" tableName="" caption="Режим[captionAdd]" viewWidg="" ctrlWidg="QPushButton кнопка 'Отправить';&#xa;"/>
+</WindowClass>
+
+<WindowClass name="эмулятор: есть в МУП БКЗ, МУП МДК">
+  <Widget param="[категория параметра или кадра]::Номер блока" worker="" idWidget="" tabName="[вкладка]" tableName="" caption="Номер блока[captionAdd]" viewWidg="QLabel" ctrlWidg="EditButton b1 'Установить'&#xa;"/>
+  <Widget param="" worker="[категория параметра или кадра]::Номер блока запрос ответ" idWidget="" tabName="[вкладка]" tableName="" caption="Номер блока[captionAdd]" viewWidg="" ctrlWidg="QPushButton кнопка 'Отправить';&#xa;"/>
+</WindowClass>
+
+<WindowClass name="сервис: есть в МУП БКЗ, МУП МДК, МДК">
+  <Widget param="[категория параметра или кадра]::Рукопожатие результат" worker="" idWidget="" tabName="[вкладка]" tableName="" caption="Рукопожатие[captionAdd]" viewWidg="QLabel label;&#xa;Transform label '0' 'null' '1' 'Ok';" ctrlWidg=""/>
+  <Widget param="" worker="[категория параметра или кадра]::Рукопожатие запрос" idWidget="" tabName="[вкладка]" tableName="" caption="Рукопожатие запросить[captionAdd]" viewWidg="" ctrlWidg="QPushButton b 'Запросить';"/>
+  <Widget param="[категория параметра или кадра]::Рукопожатие результат" worker="" idWidget="" tabName="[вкладка]" tableName="" caption="Рукопожатие сбросить[captionAdd]" viewWidg="" ctrlWidg="QPushButton b1 'Сбросить';&#xa;Обработчик b1 thisParam = 0;"/>
+  <Widget param="[категория параметра или кадра]::Режим" worker="" idWidget="" tabName="[вкладка]" tableName="" caption="Режим[captionAdd]" viewWidg="QLabel label;&#xa;Transform label '2' 'Сервис' '3' 'Загрузка ПО';" ctrlWidg=""/>
+  <Widget param="" worker="[категория параметра или кадра]::Режим установка" idWidget="" tabName="[вкладка]" tableName="" caption="Режим установить[captionAdd]" viewWidg="" ctrlWidg="QPushButton b1 'Сервис'; QPushButton b2 'Загрузка ПО';&#xa;Обработчик b1 setRegim = 2;&#xa;Обработчик b2 setRegim = 3;"/>
+  <Widget param="" worker="[категория параметра или кадра]::Режим запрос" idWidget="" tabName="[вкладка]" tableName="" caption="Режим запросить[captionAdd]" viewWidg="" ctrlWidg="QPushButton b 'Запросить';"/>
+</WindowClass>
+
+<WindowClass name="сервис: есть в МУП БКЗ, МУП МДК">
+  <Widget param="[категория параметра или кадра]::Номер блока" worker="" idWidget="" tabName="[вкладка]" tableName="" caption="Номер блока[captionAdd]" viewWidg="QLabel label;&#xa;" ctrlWidg=""/>
+  <Widget param="" worker="[категория параметра или кадра]::Номер блока запрос" idWidget="" tabName="[вкладка]" tableName="" caption="Номер блока запросить[captionAdd]" viewWidg="" ctrlWidg="QPushButton b 'Запросить';"/>
+</WindowClass>
+
+</body>

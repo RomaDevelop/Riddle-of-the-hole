@@ -1,0 +1,109 @@
+<body>
+
+<ObjectClass name="БКЗ-27 внутренний">
+  <Import type="ObjectClass" name="имеются в МУП БКЗ, МУП МДК, МДК" policy="" modification="set category 'БКЗ_27:1::МУП_БКЗ:0'" postModification=""/>
+  <Import type="ObjectClass" name="имеются в МУП БКЗ, МУП МДК, МДК" policy="" modification="set category 'БКЗ_27:1::МВДС__7_1:1::МУП_МДК:1'" postModification=""/>
+  <Import type="ObjectClass" name="имеются в МУП БКЗ, МУП МДК, МДК" policy="" modification="set category 'БКЗ_27:1::МВДС__7_2:2::МУП_МДК:1'" postModification=""/>
+  <Import type="ObjectClass" name="имеются в МУП БКЗ, МУП МДК, МДК" policy="" modification="set category 'БКЗ_27:1::МВДС_20_1:3::МУП_МДК:1'" postModification=""/>
+  <Import type="ObjectClass" name="имеются в МУП БКЗ, МУП МДК, МДК" policy="" modification="set category 'БКЗ_27:1::МВДС_20_2:4::МУП_МДК:1'" postModification=""/>
+  <Import type="ObjectClass" name="имеются в МУП БКЗ, МУП МДК, МДК" policy="" modification="set category 'БКЗ_27:1::МВДС_40__:5::МУП_МДК:1'" postModification=""/>
+  <Import type="ObjectClass" name="имеются в МУП БКЗ, МУП МДК, МДК" policy="" modification="set category 'БКЗ_27:1::МВДС__7_1:1::МДК:2'" postModification=""/>
+  <Import type="ObjectClass" name="имеются в МУП БКЗ, МУП МДК, МДК" policy="" modification="set category 'БКЗ_27:1::МВДС__7_2:2::МДК:2'" postModification=""/>
+  <Import type="ObjectClass" name="имеются в МУП БКЗ, МУП МДК, МДК" policy="" modification="set category 'БКЗ_27:1::МВДС_20_1:3::МДК:2'" postModification=""/>
+  <Import type="ObjectClass" name="имеются в МУП БКЗ, МУП МДК, МДК" policy="" modification="set category 'БКЗ_27:1::МВДС_20_2:4::МДК:2'" postModification=""/>
+  <Import type="ObjectClass" name="имеются в МУП БКЗ, МУП МДК, МДК" policy="" modification="set category 'БКЗ_27:1::МВДС_40__:5::МДК:2'" postModification=""/>
+  <Import type="ObjectClass" name="имеются в МУП БКЗ, МУП МДК" policy="" modification="set category 'БКЗ_27:1::МУП_БКЗ:0'" postModification=""/>
+  <Import type="ObjectClass" name="имеются в МУП БКЗ, МУП МДК" policy="" modification="set category 'БКЗ_27:1::МВДС__7_1:1::МУП_МДК:1'" postModification=""/>
+  <Import type="ObjectClass" name="имеются в МУП БКЗ, МУП МДК" policy="" modification="set category 'БКЗ_27:1::МВДС__7_2:2::МУП_МДК:1'" postModification=""/>
+  <Import type="ObjectClass" name="имеются в МУП БКЗ, МУП МДК" policy="" modification="set category 'БКЗ_27:1::МВДС_20_1:3::МУП_МДК:1'" postModification=""/>
+  <Import type="ObjectClass" name="имеются в МУП БКЗ, МУП МДК" policy="" modification="set category 'БКЗ_27:1::МВДС_20_2:4::МУП_МДК:1'" postModification=""/>
+  <Import type="ObjectClass" name="имеются в МУП БКЗ, МУП МДК" policy="" modification="set category 'БКЗ_27:1::МВДС_40__:5::МУП_МДК:1'" postModification=""/>
+  <Import type="ObjectClass" name="только_в_МУП_БКЗ" policy="" modification="set category 'БКЗ_27:1::МУП_БКЗ:0'" postModification=""/>
+  <Import type="ObjectClass" name="только_в_МУП_МДК" policy="" modification="set category 'БКЗ_27:1::МВДС__7_1:1::МУП_МДК:1'" postModification=""/>
+  <Import type="ObjectClass" name="только_в_МУП_МДК" policy="" modification="set category 'БКЗ_27:1::МВДС__7_2:2::МУП_МДК:1'" postModification=""/>
+  <Import type="ObjectClass" name="только_в_МУП_МДК" policy="" modification="set category 'БКЗ_27:1::МВДС_20_1:3::МУП_МДК:1'" postModification=""/>
+  <Import type="ObjectClass" name="только_в_МУП_МДК" policy="" modification="set category 'БКЗ_27:1::МВДС_20_2:4::МУП_МДК:1'" postModification=""/>
+  <Import type="ObjectClass" name="только_в_МУП_МДК" policy="" modification="set category 'БКЗ_27:1::МВДС_40__:5::МУП_МДК:1'" postModification=""/>
+  <Import type="ObjectClass" name="только_в_МДК" policy="" modification="set category 'БКЗ_27:1::МВДС__7_1:1::МДК:2'" postModification=""/>
+  <Import type="ObjectClass" name="только_в_МДК" policy="" modification="set category 'БКЗ_27:1::МВДС__7_2:2::МДК:2'" postModification=""/>
+  <Import type="ObjectClass" name="только_в_МДК" policy="" modification="set category 'БКЗ_27:1::МВДС_20_1:3::МДК:2'" postModification=""/>
+  <Import type="ObjectClass" name="только_в_МДК" policy="" modification="set category 'БКЗ_27:1::МВДС_20_2:4::МДК:2'" postModification=""/>
+  <Import type="ObjectClass" name="только_в_МДК" policy="" modification="set category 'БКЗ_27:1::МВДС_40__:5::МДК:2'" postModification=""/>
+  <Import type="ObjectClass" name="каналыМВДС_7" policy="" modification="replace 'меткаКатегория' 'БКЗ_27:1::МВДС__7_1:1::Каналы::1'" postModification=""/>
+  <Import type="ObjectClass" name="каналыМВДС_7" policy="" modification="replace 'меткаКатегория' 'БКЗ_27:1::МВДС__7_2:2::Каналы::1'" postModification=""/>
+  <Import type="ObjectClass" name="каналыМВДС20" policy="" modification="replace 'меткаКатегория' 'БКЗ_27:1::МВДС_20_1:3::Каналы::1'" postModification=""/>
+  <Import type="ObjectClass" name="каналыМВДС20" policy="" modification="replace 'меткаКатегория' 'БКЗ_27:1::МВДС_20_2:4::Каналы::1'" postModification=""/>
+  <Import type="ObjectClass" name="каналыМВДС40" policy="" modification="replace 'меткаКатегория' 'БКЗ_27:1::МВДС_40__:5::Каналы::1'" postModification=""/>
+</ObjectClass>
+
+<ObjectClass name="только_в_МУП_БКЗ">
+  <Param name="времяНаработки" category="" id="" type="Эмулятор ulong {0};Сервис ulong;" addProterties=""/>
+  <Param name="ВСК_питаний_CANExt" category="" id="" type="Эмулятор bool {0};Сервис bool;" addProterties=""/>
+  <Param name="ВСК_питаний_27ВО" category="" id="" type="Эмулятор bool {0};Сервис bool;" addProterties=""/>
+  <Param name="ВСК_питаний_27ВР" category="" id="" type="Эмулятор bool {0};Сервис bool;" addProterties=""/>
+  <Param name="ВСК_питаний_U_3_6" category="" id="" type="Эмулятор ushort {0};Сервис ushort;" addProterties=""/>
+  <Param name="ВСК_питаний_U_3_4" category="" id="" type="Эмулятор ushort {0};Сервис ushort;" addProterties=""/>
+  <Param name="ВСК_питаний_U_5_osn" category="" id="" type="Эмулятор ushort {0};Сервис ushort;" addProterties=""/>
+  <Param name="ВСК_питаний_U_5_res" category="" id="" type="Эмулятор ushort {0};Сервис ushort;" addProterties=""/>
+  <Param name="ВСК_питаний_U_CANвнутр" category="" id="" type="Эмулятор ushort {0};Сервис ushort;" addProterties=""/>
+  <Param name="ВСК_питаний_КонтрольОпорн" category="" id="" type="Эмулятор ushort {0};Сервис ushort;" addProterties=""/>
+</ObjectClass>
+
+<ObjectClass name="только_в_МУП_МДК">
+  <Param name="ответ_на_включение_каналов_запрос" category="" id="" type="text" addProterties=""/>
+  <Param name="ВСК_питаний_U_3_6" category="" id="" type="Эмулятор ushort {0};Сервис ushort;" addProterties=""/>
+  <Param name="ВСК_питаний_КонтрольОпорн" category="" id="" type="Эмулятор ushort {0};Сервис ushort;" addProterties=""/>
+  <Param name="ВСК_модуляМВДС_UвхСил" category="" id="" type="Эмулятор bool {0};Сервис bool;" addProterties=""/>
+</ObjectClass>
+
+<ObjectClass name="только_в_МДК">
+  <Param name="3_6_ВСК" category="" id="" type="Эмулятор bool {0};Сервис bool;" addProterties=""/>
+  <Param name="3_6_ВМК" category="" id="" type="Эмулятор bool {0};Сервис bool;" addProterties=""/>
+  <Param name="5_В" category="" id="" type="Эмулятор bool {0};Сервис bool;" addProterties=""/>
+  <Param name="27_В" category="" id="" type="Эмулятор bool {0};Сервис bool;" addProterties=""/>
+</ObjectClass>
+
+<ObjectClass name="имеются в МУП БКЗ, МУП МДК, МДК">
+  <Param name="Рукопожатие результат" category="" id="" type="Эмулятор bool {1};Сервис bool {0};" addProterties=""/>
+  <Param name="Режим" category="" id="" type="ubyte" addProterties=""/>
+</ObjectClass>
+
+<ObjectClass name="имеются в МУП БКЗ, МУП МДК">
+  <Param name="Номер блока" category="" id="" type="Эмулятор ubyte {0};Сервис ubyte;" addProterties=""/>
+</ObjectClass>
+
+<ObjectClass name="каналыМВДС_7">
+  <Import type="ObjectClass" name="канал_внутренний" policy="" modification="count 14; replace 'меткаНомерКанала' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11' '12' '13' '14'" postModification=""/>
+</ObjectClass>
+
+<ObjectClass name="каналыМВДС20">
+  <Import type="ObjectClass" name="канал_внутренний" policy="" modification="count 8; replace 'меткаНомерКанала' '1' '2' '3' '4' '5' '6' '7' '8'" postModification=""/>
+</ObjectClass>
+
+<ObjectClass name="каналыМВДС40">
+  <Import type="ObjectClass" name="канал_внутренний" policy="" modification="count 4; replace 'меткаНомерКанала' '1' '2' '3' '4'" postModification=""/>
+</ObjectClass>
+
+<ObjectClass name="канал_внутренний">
+  <Param name="Номер" category="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала" id="" type="ubyte {меткаНомерКанала};" addProterties=""/>
+  <Param name="Уставка_вОЗУ" category="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала" id="" type="Эмулятор ushort {0};Сервис ushort;" addProterties=""/>
+  <Param name="Уставки_вПЗУ" category="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала" id="" type="Эмулятор ushort[] {0,0,0,0,0,0};Сервис ushort[] {,,,,,};" addProterties=""/>
+  <Param name="Тип_вОЗУ" category="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала" id="" type="Эмулятор ushort {0};Сервис ushort;" addProterties=""/>
+  <Param name="Типы_вПЗУ" category="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала" id="" type="Эмулятор ushort[] {0};Сервис ushort[] {0};" addProterties=""/>
+  <Param name="Коэфф_АвОЗУ" category="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала" id="" type="Эмулятор ulong {0};Сервис ulong;" addProterties=""/>
+  <Param name="Коэфф_АвПЗУ" category="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала" id="" type="Эмулятор ulong {0};Сервис ulong;" addProterties=""/>
+  <Param name="Коэфф_BвОЗУ" category="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала" id="" type="Эмулятор ulong {0};Сервис ulong;" addProterties=""/>
+  <Param name="Коэфф_BвПЗУ" category="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала" id="" type="Эмулятор ulong {0};Сервис ulong;" addProterties=""/>
+  <Param name="Коэфф_CвОЗУ" category="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала" id="" type="Эмулятор ulong {0};Сервис ulong;" addProterties=""/>
+  <Param name="Коэфф_CвПЗУ" category="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала" id="" type="Эмулятор ulong {0};Сервис ulong;" addProterties=""/>
+  <Param name="ВклОткл" category="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала" id="" type="Эмулятор bool {0};Сервис bool;" addProterties=""/>
+  <Param name="НормаОтказ" category="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала" id="" type="Эмулятор bool {0};Сервис bool;" addProterties=""/>
+  <Param name="ПерегрузкаПуск" category="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала" id="" type="Эмулятор bool {0};Сервис bool;" addProterties=""/>
+  <Param name="ПерегрузкаУстанов" category="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала" id="" type="Эмулятор bool {0};Сервис bool;" addProterties=""/>
+  <Param name="КороткоеЗамыкание" category="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала" id="" type="Эмулятор bool {0};Сервис bool;" addProterties=""/>
+  <Param name="UвыхНаличие" category="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала" id="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала" type="Эмулятор bool {0};Сервис bool;" addProterties=""/>
+  <Param name="UвыхОтказ" category="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала" id="" type="Эмулятор bool {0};Сервис bool;" addProterties=""/>
+  <Param name="Ток" category="меткаКатегория::Канал меткаНомерКанала:меткаНомерКанала" id="" type="Эмулятор ushort {0};Сервис ushort;" addProterties=""/>
+</ObjectClass>
+
+</body>

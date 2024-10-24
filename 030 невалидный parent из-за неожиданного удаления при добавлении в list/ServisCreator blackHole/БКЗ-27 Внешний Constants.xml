@@ -1,0 +1,54 @@
+<body>
+
+<Constants name="БКЗ-27 ext канал 1">
+  <Import type="Constants" name="ID внешнего протокола. Общее" policy="" modification="removeName 'can2';&#xa;rename 'can1' 'canCur';" postModification=""/>
+  <Import type="Constants" name="Коды команд внешнего протокола" policy="" modification="" postModification=""/>
+</Constants>
+
+<Constants name="БКЗ-27 ext канал 2">
+  <Import type="Constants" name="ID внешнего протокола. Общее" policy="" modification="removeName 'can1';&#xa;rename 'can2' 'canCur';" postModification=""/>
+  <Import type="Constants" name="Коды команд внешнего протокола" policy="" modification="" postModification=""/>
+</Constants>
+
+<Constants name="ID внешнего протокола. Общее">
+  <Constant name="eec" category="Логические каналы" describtion="Логический канал для искл. случая	" bitSize="3" enc="bin" value="000"/>
+  <Constant name="noc" category="Логические каналы" describtion="Логический канал для штатной работы" bitSize="3" enc="bin" value="010"/>
+  <Constant name="tmc" category="Логические каналы" describtion="Логический канал для тестирования	" bitSize="3" enc="bin" value="110"/>
+  <Constant name="SrcF13" category="Общее" describtion="Source FID = 13 «Электрическая мощность»" bitSize="7" enc="bin" value="0001101"/>
+  <Constant name="RSD" category="Общее" describtion="Бит RSD" bitSize="1" enc="bin" value="0"/>
+  <Constant name="LCL" category="Общее" describtion="Бит LCL" bitSize="1" enc="bin" value="1"/>
+  <Constant name="PVT" category="Общее" describtion="Бит PVT" bitSize="1" enc="bin" value="0"/>
+  <Constant name="SSCDC" category="Общее" describtion="Подсистема постоянного тока (60)" bitSize="4" enc="bin" value="0110"/>
+  <Constant name="SSCall" category="Общее" describtion="Для всех подсистем" bitSize="4" enc="bin" value="0000"/>
+  <Constant name="UNCurr" category="Номера блоков" describtion="БКЗ-27 №1" bitSize="5" enc="bin" value="00001"/>
+  <Constant name="UN1" category="Номера блоков" describtion="БКЗ-27 №1" bitSize="5" enc="bin" value="00001"/>
+  <Constant name="UN2" category="Номера блоков" describtion="БКЗ-27 №2" bitSize="5" enc="bin" value="00010"/>
+  <Constant name="UN3" category="Номера блоков" describtion="БКЗ-27 №3" bitSize="5" enc="bin" value="00011"/>
+  <Constant name="UN4" category="Номера блоков" describtion="БКЗ-27 №4" bitSize="5" enc="bin" value="00100"/>
+  <Constant name="UN5" category="Номера блоков" describtion="БКЗ-27 №5" bitSize="5" enc="bin" value="00101"/>
+  <Constant name="UN6" category="Номера блоков" describtion="БКЗ-27 №6" bitSize="5" enc="bin" value="00110"/>
+  <Constant name="UN7" category="Номера блоков" describtion="БКЗ-27 №7" bitSize="5" enc="bin" value="00111"/>
+  <Constant name="UN8" category="Номера блоков" describtion="БКЗ-27 №8" bitSize="5" enc="bin" value="01000"/>
+  <Constant name="UN9" category="Номера блоков" describtion="БКЗ-27 №9" bitSize="5" enc="bin" value="01001"/>
+  <Constant name="UN10" category="Номера блоков" describtion="БКЗ-27 №10" bitSize="5" enc="bin" value="01010"/>
+  <Constant name="UNall" category="Номера блоков" describtion="Широковещательный" bitSize="5" enc="bin" value="00000"/>
+  <Constant name="can1" category="Идентификатор канала" describtion="Основной" bitSize="2" enc="bin" value="01"/>
+  <Constant name="can2" category="Идентификатор канала" describtion="Резервный" bitSize="2" enc="bin" value="10"/>
+</Constants>
+
+<Constants name="Коды команд внешнего протокола">
+  <Constant name="ВКЛУПР" category="Коды объектов данных" describtion="Управление включением/отключением" bitSize="5" enc="bin" value="00101"/>
+  <Constant name="СБРЗАЩ" category="Коды объектов данных" describtion="Команда «Сброс защиты»" bitSize="5" enc="bin" value="00110"/>
+  <Constant name="ИСПР" category="Коды объектов данных" describtion="Состояние каналов «Исправен/Отказ»" bitSize="5" enc="bin" value="00111"/>
+  <Constant name="ВКЛСОСТ" category="Коды объектов данных" describtion="Состояние каналов «Вкл/Откл»" bitSize="5" enc="bin" value="01000"/>
+  <Constant name="КЗ" category="Коды объектов данных" describtion="Признак «Короткое замыкание»" bitSize="5" enc="bin" value="01001"/>
+  <Constant name="ПЕРЕГР" category="Коды объектов данных" describtion="Признак «Перегрузка»" bitSize="5" enc="bin" value="01010"/>
+  <Constant name="ОТКВЫХ" category="Коды объектов данных" describtion="Признак «Отказ выхода»" bitSize="5" enc="bin" value="01011"/>
+  <Constant name="ОТКНАГР" category="Коды объектов данных" describtion="Признак «Отказ нагрузки»" bitSize="5" enc="bin" value="01100"/>
+  <Constant name="СОСТ" category="Коды объектов данных" describtion="Состояние устройства" bitSize="5" enc="bin" value="01101"/>
+  <Constant name="ТОК" category="Коды объектов данных" describtion="Данные «Ток канала»" bitSize="5" enc="bin" value="01111"/>
+  <Constant name="ДИЗД" category="Коды объектов данных" describtion="Запрос данных об изделии" bitSize="5" enc="bin" value="10111"/>
+  <Constant name="УПРКАН" category="Коды объектов данных" describtion="Управление конкретным каналом" bitSize="5" enc="bin" value="11000"/>
+</Constants>
+
+</body>

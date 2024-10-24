@@ -1,0 +1,20 @@
+    static QString CANMsgToStrEx(CANMsg_t &msg, int base = 16)
+    {
+        QString str = QString::number(msg.ID, base);
+        QString r = QString::number(msg.regime, 2);
+        if(r == "0") r += "00";
+        str += " R:" + r;
+
+        >>>> str += " L:" + QString::number(msg.length, 1) + " ";
+
+        if(msg.length)
+        {
+            str += "{ ";
+            for(unsigned int i = 0; i < msg.length; i++)
+                str += QString::number(msg.data[i], base) + " ";
+            str += "}";
+        }
+        return str;
+    }
+
+QString::number(msg.length, 1) по основанию 1!!!

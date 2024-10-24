@@ -1,0 +1,16 @@
+Вызов загадки:
+запускаем
+жмем DoAll
+из canwise отправляем себе кадров, всё отображается
+закрываем КАНТраффик, проверяем - последние полученные кадры не сохранены
+почему?
+
+Разгадка:
+запись последних полученных осузествляется в TrafficChannel::~TrafficChannel()
+TrafficChannel хранится в веторе внутри Traffic
+а Traffic создается в mainwindow.cpp
+
+nsTraffic::Traffic *traffic; 		// глобально
+traffic = new nsTraffic::Traffic;	// в конструкторе
+
+а delete естественно забыл, соответсвенно и ~Traffic и ~TrafficChannel не вызвался

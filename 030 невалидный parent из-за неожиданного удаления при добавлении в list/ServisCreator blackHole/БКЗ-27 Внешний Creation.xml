@@ -1,0 +1,35 @@
+<body>
+
+<Channel name="Основной севрис" type="CAN" params="number=0;regime=EFF;baud=250;"/>
+
+<Channel name="Резервный севрис" type="CAN" params="number=2;regime=EFF;baud=250;"/>
+
+<Channel name="Основной эмулятор" type="CAN" params="number=1;regime=EFF;baud=250;"/>
+
+<Channel name="Резервный эмулятор" type="CAN" params="number=3;regime=EFF;baud=250;"/>
+
+<Object name="БКЗ_27 ext Эмулятор ch 1" type="Эмулятор" ObjectClass="БКЗ-27 ext" ProtocolClass="БКЗ-27 ext" Constants="БКЗ-27 ext канал 1" channel="Основной эмулятор" startSettings=""/>
+
+<Object name="БКЗ_27 ext Эмулятор ch 2" type="Эмулятор" ObjectClass="БКЗ-27 ext" ProtocolClass="БКЗ-27 ext" Constants="БКЗ-27 ext канал 2" channel="Резервный эмулятор" startSettings=""/>
+
+<Window name="БКЗ-27 Эмулятор ch 1" WindowClass="БКЗ-27 ext Эмулятор" ObjectToConnect="БКЗ_27 ext Эмулятор ch 1" Other=""/>
+
+<Window name="//БКЗ-27 Эмулятор ch 2" WindowClass="БКЗ-27 ext Эмулятор" ObjectToConnect="БКЗ_27 ext Эмулятор ch 2" Other=""/>
+
+<Object name="БКЗ_27 ext Сервис ch 1" type="Сервис" ObjectClass="БКЗ-27 ext" ProtocolClass="БКЗ-27 ext" Constants="БКЗ-27 ext канал 1" channel="Основной севрис" startSettings=""/>
+
+<Object name="БКЗ_27 ext Сервис ch 2" type="Сервис" ObjectClass="БКЗ-27 ext" ProtocolClass="БКЗ-27 ext" Constants="БКЗ-27 ext канал 2" channel="Резервный севрис" startSettings=""/>
+
+<Window name="БКЗ-27 Сервис ch 1" WindowClass="БКЗ-27 ext Сервис" ObjectToConnect="БКЗ_27 ext Сервис ch 1" Other=""/>
+
+<Window name="//БКЗ-27 Сервис ch 2" WindowClass="БКЗ-27 ext Сервис" ObjectToConnect="БКЗ_27 ext Сервис ch 2" Other=""/>
+
+<Window name="//БКЗ-27 ПСИ" WindowClass="external BKZ27_psi" ObjectToConnect="БКЗ_27 ext Сервис ch 1;&#xa;БКЗ_27 ext Сервис ch 2;" Other=""/>
+
+<Sync name="//sync1" command="БКЗ-27 канал 1 мк 1 Сервис;БКЗ-27 канал 1 мк 2 Сервис;БКЗ-27 канал 2 мк 1 Сервис;БКЗ-27 канал 2 мк 2 Сервис;"/>
+
+<Other content="ControlPanel controlPanel"/>
+
+<Other content="Monitor monitor"/>
+
+</body>

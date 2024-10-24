@@ -1,0 +1,47 @@
+Вызов загадки:
+запускаем
+жмём кнопку TrafficView
+жмём кнопку Открыть
+Выбираем файл траффика
+	конструктор файл открывает, считывает версию, все норм
+	но дальше, при попытке читать из файла дебаг ошибки и даже приложение иногда падает
+		QFileDevice::seek: IODevice is not open
+
+
+Разгадка:
+объекты QFile находятся внутри класса TrafficViewFile которые добавляются в вектор через push_back экземпляром
+последовательность действий такая: 
+	1. срабатывает конструктор TrafficViewFile, который делает file->open(QIODevice::ReadOnly)
+	2. но это был временный объект переданный в функцию push_back и срабатывает деструктор, который закрывает QFile (reserve не поможет)
+	3. при следующем push_back происходит релокация и деструктор срабатывает второй раз
+Выход из ситуации: file->open убрать из конструктора, ну и желательно отказаться от push_back, сначала сделать resize, а потом работать
+
+Доказательство:
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class A
+{
+    int a;
+    public:
+    A(int val): a{val} {cout<< "A()\n";}
+    ~A() {cout<< "~A()\n";}  
+};
+
+int main() {
+    
+    vector<A> vectA;
+    
+    //vectA.reserve(10);
+    for(int i=0; i<10; i++)
+        {
+        vectA.push_back(i);
+        // vectA.push_back(A(i));  // не помогло
+        cout<<"push_back did\n";
+        }
+    
+    cout << "end\n";
+    
+    return 0;
+}

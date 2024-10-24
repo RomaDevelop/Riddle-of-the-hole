@@ -1,0 +1,1 @@
+переместить определение класса CheckBoxDialog в includeparser.h

@@ -1,0 +1,3 @@
+забыл = 0
+в virtual int WriteLog(QString log) const;
+в icanchannel.h

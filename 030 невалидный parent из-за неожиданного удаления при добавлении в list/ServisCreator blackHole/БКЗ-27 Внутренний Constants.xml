@@ -1,0 +1,115 @@
+<body>
+
+<Constants name="БКЗ-27 канал 1 мк 1">
+  <Import type="Constants" name="ID внутренего протокола. Общее" policy="" modification="removeName 'мк2';&#xa;removeName 'can2';&#xa;rename 'мк1' 'мкТ';&#xa;rename 'can1' 'canCur';" postModification=""/>
+  <Import type="Constants" name="Коды команд внутренего протокола" policy="" modification="" postModification=""/>
+</Constants>
+
+<Constants name="БКЗ-27 канал 1 мк 2">
+  <Import type="Constants" name="ID внутренего протокола. Общее" policy="" modification="removeName 'мк1';&#xa;removeName 'can2';&#xa;rename 'мк2' 'мкТ';&#xa;rename 'can1' 'canCur';" postModification=""/>
+  <Import type="Constants" name="Коды команд внутренего протокола" policy="" modification="" postModification=""/>
+</Constants>
+
+<Constants name="БКЗ-27 канал 2 мк 1">
+  <Import type="Constants" name="ID внутренего протокола. Общее" policy="" modification="removeName 'мк2';&#xa;removeName 'can1';&#xa;rename 'мк1' 'мкТ';&#xa;rename 'can2' 'canCur';" postModification=""/>
+  <Import type="Constants" name="Коды команд внутренего протокола" policy="" modification="" postModification=""/>
+</Constants>
+
+<Constants name="БКЗ-27 канал 2 мк 2">
+  <Import type="Constants" name="ID внутренего протокола. Общее" policy="" modification="removeName 'мк1';&#xa;removeName 'can1';&#xa;rename 'мк2' 'мкТ';&#xa;rename 'can2' 'canCur';" postModification=""/>
+  <Import type="Constants" name="Коды команд внутренего протокола" policy="" modification="" postModification=""/>
+</Constants>
+
+<Constants name="ID внутренего протокола. Общее">
+  <Constant name="eec" category="Логические каналы" describtion="Логический канал для искл. случая	" bitSize="3" enc="bin" value="000"/>
+  <Constant name="noc" category="Логические каналы" describtion="Логический канал для штатной работы" bitSize="3" enc="bin" value="010"/>
+  <Constant name="tmc" category="Логические каналы" describtion="Логический канал для тестирования	" bitSize="3" enc="bin" value="110"/>
+  <Constant name="retrans" category="Признак ретрансляции" describtion="" bitSize="1" enc="bin" value="1"/>
+  <Constant name="nretrans" category="Признак ретрансляции" describtion="" bitSize="1" enc="bin" value="0"/>
+  <Constant name="answ" category="Признак ответа" describtion="" bitSize="2" enc="bin" value="1"/>
+  <Constant name="nansw" category="Признак ответа" describtion="" bitSize="2" enc="bin" value="0"/>
+  <Constant name="местоМупБкз" category="Номер места платы" describtion="" bitSize="4" enc="dec" value="0"/>
+  <Constant name="местоМвдс_7_1" category="Номер места платы" describtion="" bitSize="4" enc="dec" value="1"/>
+  <Constant name="местоМвдс_7_2" category="Номер места платы" describtion="" bitSize="4" enc="dec" value="2"/>
+  <Constant name="местоМвдс20_1" category="Номер места платы" describtion="" bitSize="4" enc="dec" value="3"/>
+  <Constant name="местоМвдс20_2" category="Номер места платы" describtion="" bitSize="4" enc="dec" value="4"/>
+  <Constant name="местоМвдс40__" category="Номер места платы" describtion="" bitSize="4" enc="dec" value="5"/>
+  <Constant name="платаМупБкз" category="Тип платы" describtion="" bitSize="3" enc="dec" value="1"/>
+  <Constant name="платаМупМдк" category="Тип платы" describtion="" bitSize="3" enc="dec" value="2"/>
+  <Constant name="платаМдк" category="Тип платы" describtion="" bitSize="3" enc="dec" value="3"/>
+  <Constant name="мк1" category="Номер микроконтроллера" describtion="" bitSize="2" enc="dec" value="1"/>
+  <Constant name="мк2" category="Номер микроконтроллера" describtion="" bitSize="2" enc="dec" value="2"/>
+  <Constant name="иМупБКЗ" category="Источник сообщения" describtion="" bitSize="2" enc="dec" value="0"/>
+  <Constant name="иМупМдк" category="Источник сообщения" describtion="" bitSize="2" enc="dec" value="1"/>
+  <Constant name="иАРМ" category="Источник сообщения" describtion="" bitSize="2" enc="dec" value="2"/>
+  <Constant name="резерв" category="Резерв" describtion="" bitSize="2" enc="bin" value="00"/>
+  <Constant name="can1" category="Номер CAN" describtion="" bitSize="2" enc="bin" value="01"/>
+  <Constant name="can2" category="Номер CAN" describtion="" bitSize="2" enc="bin" value="10"/>
+</Constants>
+
+<Constants name="Коды команд внутренего протокола">
+  <Constant name="Ошибка" category="Доп. код в Data[0][0]" describtion="Ошибка" bitSize="1" enc="dec" value="1"/>
+  <Constant name="НетОшибок" category="Доп. код в Data[0][0]" describtion="Ошибка" bitSize="1" enc="dec" value="0"/>
+  <Constant name="номерБлока" category="Код команды в ID" describtion="Передача номера блока" bitSize="8" enc="dec" value="1"/>
+  <Constant name="переходВРежим" category="Код команды в ID" describtion="Переход в режим" bitSize="8" enc="dec" value="2"/>
+  <Constant name="чтениеРежима" category="Код команды в ID" describtion="Чтение режима" bitSize="8" enc="dec" value="3"/>
+  <Constant name="режимСервис" category="Значение параметра" describtion="" bitSize="8" enc="dec" value="2"/>
+  <Constant name="режимЗагрузкаПО" category="Значение параметра" describtion="" bitSize="8" enc="dec" value="3"/>
+  <Constant name="УставкиМупМдк" category="Код команды в ID" describtion="Работа с уставками каналов (в МУП МДК)" bitSize="8" enc="dec" value="4"/>
+  <Constant name="УставкаЧтениеИзОЗУ" category="Доп. код в Data[0][1-7]" describtion="Чтение из ОЗУ" bitSize="7" enc="dec" value="0"/>
+  <Constant name="УставкаЗаписьВОЗУ" category="Доп. код в Data[0][1-7]" describtion="Запись в ОЗУ" bitSize="7" enc="dec" value="1"/>
+  <Constant name="УставкаЧтениеИзПЗУ" category="Доп. код в Data[0][1-7]" describtion="Чтение из ПЗУ" bitSize="7" enc="dec" value="2"/>
+  <Constant name="УставкаЗаписьВПЗУ" category="Доп. код в Data[0][1-7]" describtion="Запись в ПЗУ" bitSize="7" enc="dec" value="3"/>
+  <Constant name="УставкаИзОЗУвПЗУ" category="Доп. код в Data[0][1-7]" describtion="Запись из ОЗУ в ПЗУ для акт. места" bitSize="7" enc="dec" value="4"/>
+  <Constant name="УставкиЧтениеКСизПЗУ" category="Доп. код в Data[0][1-7]" describtion="Чтение КС уставок из ПЗУ" bitSize="7" enc="dec" value="5"/>
+  <Constant name="УставкиЧтКСизПЗУМУПБКЗ" category="Код команды в ID" describtion="Чтение КС уставок из ПЗУ (в МУП БКЗ)" bitSize="8" enc="dec" value="5"/>
+  <Constant name="ТипыМупМДК" category="Код команды в ID" describtion="Работа с типами каналов (в МУП МДК)" bitSize="8" enc="dec" value="6"/>
+  <Constant name="ТипЧтениеИзОЗУ" category="Доп. код в Data[0][1-7]" describtion="Чтение из ОЗУ" bitSize="7" enc="dec" value="0"/>
+  <Constant name="ТипЗаписьВОЗУ" category="Доп. код в Data[0][1-7]" describtion="Запись в ОЗУ" bitSize="7" enc="dec" value="1"/>
+  <Constant name="ТипЧтениеИзПЗУ" category="Доп. код в Data[0][1-7]" describtion="Чтение из ПЗУ" bitSize="7" enc="dec" value="2"/>
+  <Constant name="ТипЗаписьВПЗУ" category="Доп. код в Data[0][1-7]" describtion="Запись в ПЗУ" bitSize="7" enc="dec" value="3"/>
+  <Constant name="ТипИзОЗУвПЗУ" category="Доп. код в Data[0][1-7]" describtion="Запись из ОЗУ в ПЗУ для акт. места" bitSize="7" enc="dec" value="4"/>
+  <Constant name="ТипЧтениеКСизПЗУ" category="Доп. код в Data[0][1-7]" describtion="Чтение КС типов из ПЗУ" bitSize="7" enc="dec" value="5"/>
+  <Constant name="ТипыЧтКСизПзуМупБкз" category="Код команды в ID" describtion="Чтение КС типов каналов из ПЗУ (в МУП БКЗ)" bitSize="8" enc="dec" value="7"/>
+  <Constant name="Коефф" category="Код команды в ID" describtion="Работа с коэффициентами" bitSize="8" enc="dec" value="8"/>
+  <Constant name="КоеффЧтениеИзОЗУ" category="Доп. код в Data[0][4-6]" describtion="Чтение из ОЗУ" bitSize="3" enc="dec" value="0"/>
+  <Constant name="КоеффЗаписьВОЗУ" category="Доп. код в Data[0][4-6]" describtion="Запись в ОЗУ" bitSize="3" enc="dec" value="1"/>
+  <Constant name="КоеффЧтениеИзПЗУ" category="Доп. код в Data[0][4-6]" describtion="Чтение из ПЗУ" bitSize="3" enc="dec" value="2"/>
+  <Constant name="КоеффЗаписьВПЗУ" category="Доп. код в Data[0][4-6]" describtion="Запись в ПЗУ" bitSize="3" enc="dec" value="3"/>
+  <Constant name="КоеффИзОЗУвПЗУ" category="Доп. код в Data[0][4-6]" describtion="Запись из ОЗУ в ПЗУ для акт. места" bitSize="3" enc="dec" value="4"/>
+  <Constant name="КоеффЧтениеКСизПЗУ" category="Доп. код в Data[0][4-6]" describtion="Чтение КС типов из ПЗУ" bitSize="3" enc="dec" value="5"/>
+  <Constant name="КоеффA" category="Доп. код в Data[0][0-3]" describtion="коэффициент A" bitSize="4" enc="hex" value="A"/>
+  <Constant name="КоеффB" category="Доп. код в Data[0][0-3]" describtion="коэффициент B" bitSize="4" enc="hex" value="B"/>
+  <Constant name="КоеффC" category="Доп. код в Data[0][0-3]" describtion="коэффициент C" bitSize="4" enc="hex" value="C"/>
+  <Constant name="КоеффЧтКСизПзуМупБкз" category="Код команды в ID" describtion="Чтение КС коэффициентов из ПЗУ (в МУП БКЗ)" bitSize="8" enc="dec" value="9"/>
+  <Constant name="каналыВкл" category="Код команды в ID" describtion="Включение каналов" bitSize="8" enc="dec" value="10"/>
+  <Constant name="каналыОткл" category="Код команды в ID" describtion="Отключение каналов" bitSize="8" enc="dec" value="11"/>
+  <Constant name="каналыОтклАвар" category="Код команды в ID" describtion="Отключение каналов аварийное" bitSize="8" enc="dec" value="12"/>
+  <Constant name="каналыЧтениеСост" category="Код команды в ID" describtion="Чтение состояний всех каналов (вкл/откл, норма/отказ)" bitSize="8" enc="dec" value="13"/>
+  <Constant name="каналыЧтениеПерегрПуск" category="Код команды в ID" describtion="Чтение состояний перегрузок пусковых" bitSize="8" enc="dec" value="14"/>
+  <Constant name="каналыЧтениеПерегрУст" category="Код команды в ID" describtion="Чтение состояний перегрузок установившихся" bitSize="8" enc="dec" value="15"/>
+  <Constant name="каналыЧтениеКЗ" category="Код команды в ID" describtion="Чтение состояний КЗ" bitSize="8" enc="dec" value="16"/>
+  <Constant name="каналыЧтениеUвых" category="Код команды в ID" describtion="Чтение состояний Uвых всех каналов (состояние, отказ)" bitSize="8" enc="dec" value="17"/>
+  <Constant name="каналыСбросКЗ" category="Код команды в ID" describtion="Сброс КЗ всех каналов" bitSize="8" enc="dec" value="18"/>
+  <Constant name="ВСК_МУП_БКЗ" category="Код команды в ID" describtion="Чтение ВСК МУП БКЗ" bitSize="8" enc="dec" value="19"/>
+  <Constant name="ВСК_МУП_МДК" category="Код команды в ID" describtion="Чтение ВСК платы МУП МДК" bitSize="8" enc="dec" value="20"/>
+  <Constant name="ВСК_МДК" category="Код команды в ID" describtion="Чтение ВСК МДК" bitSize="8" enc="dec" value="21"/>
+  <Constant name="ВСК_МВДС" category="Код команды в ID" describtion="Чтение ВСК модуля МВДС" bitSize="8" enc="dec" value="22"/>
+  <Constant name="rPOinfo" category="Код команды в ID" describtion="Чтение информации о ПО: Децимальная версия; Инженерная версия; Дата ПО; КС ПО." bitSize="8" enc="dec" value="23"/>
+  <Constant name="чЗавДаннИзПЗУ" category="Код команды в ID" describtion="Чтение заводских данных платы из ПЗУ" bitSize="8" enc="dec" value="24"/>
+  <Constant name="зЗавДаннВПЗУ" category="Код команды в ID" describtion="Запись заводских данных платы в ПЗУ" bitSize="8" enc="dec" value="25"/>
+  <Constant name="времяНаработкиID" category="Код команды в ID" describtion="Чтение времени наработки" bitSize="8" enc="dec" value="26"/>
+  <Constant name="упрТестНагр" category="Код команды в ID" describtion="Управление тестом нагрузок (вкл/откл)" bitSize="8" enc="dec" value="27"/>
+  <Constant name="чтТестНагр" category="Код команды в ID" describtion="Чтение теста нагрузки" bitSize="8" enc="dec" value="28"/>
+  <Constant name="токГр1" category="Код команды в ID" describtion="Чтение тока каналов группы №1" bitSize="8" enc="dec" value="29"/>
+  <Constant name="токГр2" category="Код команды в ID" describtion="Чтение тока каналов группы №2" bitSize="8" enc="dec" value="30"/>
+  <Constant name="токГр3" category="Код команды в ID" describtion="Чтение тока каналов группы №3" bitSize="8" enc="dec" value="31"/>
+  <Constant name="токГр4" category="Код команды в ID" describtion="Чтение тока каналов группы №4" bitSize="8" enc="dec" value="32"/>
+  <Constant name="токГр5" category="Код команды в ID" describtion="Чтение тока каналов группы №5" bitSize="8" enc="dec" value="33"/>
+  <Constant name="токФлоат" category="Код команды в ID" describtion="Чтение тока канала в Амперах (float)" bitSize="8" enc="dec" value="34"/>
+  <Constant name="токКодАЦП" category="Код команды в ID" describtion="Чтение тока канала в Кодах АЦП" bitSize="8" enc="dec" value="35"/>
+  <Constant name="чтТемпр" category="Код команды в ID" describtion="Чтение тмпературы" bitSize="8" enc="dec" value="36"/>
+  <Constant name="рукопожатие" category="Код команды в ID" describtion="Рукопожатие" bitSize="8" enc="dec" value="37"/>
+</Constants>
+
+</body>

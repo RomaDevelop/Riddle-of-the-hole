@@ -1,0 +1,171 @@
+<body>
+
+<WindowClass name="общее ext">
+  <Widget param="БКЗ-27:1::Состояние устройства" worker="" idWidget="" tabName="" tableName="" caption="Состояние устройства" viewWidg="QLabel" ctrlWidg="EditButton b1 'Установить'"/>
+  <Widget param="БКЗ-27:1::Отказ Uвх" worker="" idWidget="" tabName="" tableName="" caption="Отказ Uвх" viewWidg="QLabel" ctrlWidg="EditButton b1 'Установить'"/>
+  <Widget param="БКЗ-27:1::Заводской номер" worker="" idWidget="" tabName="" tableName="" caption="Заводской номер" viewWidg="QLabel" ctrlWidg="EditButton b1 'Установить'"/>
+  <Widget param="БКЗ-27:1::Версия ПО" worker="" idWidget="" tabName="" tableName="" caption="Версия ПО" viewWidg="QLabel" ctrlWidg="EditButton b1 'Установить'"/>
+</WindowClass>
+
+<WindowClass name="общее ext только эмулятор">
+  <Widget param="" worker="БКЗ-27:1::Состояние устройства периодическое" idWidget="" tabName="" tableName="" caption="Состояние устройства периодическое" viewWidg="" ctrlWidg="QPushButton кнопка 'Отправить';"/>
+  <Widget param="" worker="БКЗ-27:1::Состояние устройства апериодическое" idWidget="" tabName="" tableName="" caption="Состояние устройства апериодическое" viewWidg="" ctrlWidg="QPushButton кнопка 'Отправить';"/>
+  <Widget param="" worker="БКЗ-27:1::вкл инфо периодический" idWidget="" tabName="" tableName="" caption="Состояние вкл/выкл каналов периодическое" viewWidg="" ctrlWidg="QPushButton кнопка 'Отправить';"/>
+  <Widget param="" worker="БКЗ-27:1::вкл инфо апериодический" idWidget="" tabName="" tableName="" caption="Состояние вкл/выкл каналов апериодическое" viewWidg="" ctrlWidg="QPushButton кнопка 'Отправить';"/>
+  <Widget param="" worker="БКЗ-27:1::исправность периодический" idWidget="" tabName="" tableName="" caption="Исправность каналов периодическое" viewWidg="" ctrlWidg="QPushButton кнопка 'Отправить';"/>
+  <Widget param="" worker="БКЗ-27:1::короткое замыкание периодический" idWidget="" tabName="" tableName="" caption="Состояние КЗ периодическое" viewWidg="" ctrlWidg="QPushButton кнопка 'Отправить';"/>
+  <Widget param="" worker="БКЗ-27:1::короткое замыкание апериодический" idWidget="" tabName="" tableName="" caption="Состояние КЗ апериодическое" viewWidg="" ctrlWidg="QPushButton кнопка 'Отправить';"/>
+  <Widget param="" worker="БКЗ-27:1::перегрузка периодический" idWidget="" tabName="" tableName="" caption="Состояние перегрузка периодическое" viewWidg="" ctrlWidg="QPushButton кнопка 'Отправить';"/>
+  <Widget param="" worker="БКЗ-27:1::перегрузка апериодический" idWidget="" tabName="" tableName="" caption="Состояние перегрузка апериодическое" viewWidg="" ctrlWidg="QPushButton кнопка 'Отправить';"/>
+  <Widget param="" worker="БКЗ-27:1::отказ выхода периодический" idWidget="" tabName="" tableName="" caption="Состояние отказ выхода периодическое" viewWidg="" ctrlWidg="QPushButton кнопка 'Отправить';"/>
+  <Widget param="" worker="БКЗ-27:1::отказ выхода апериодический" idWidget="" tabName="" tableName="" caption="Состояние отказ выхода апериодическое" viewWidg="" ctrlWidg="QPushButton кнопка 'Отправить';"/>
+  <Widget param="" worker="БКЗ-27:1::отказ нагрузки периодический" idWidget="" tabName="" tableName="" caption="Состояние отказ нагрузки периодическое" viewWidg="" ctrlWidg="QPushButton кнопка 'Отправить';"/>
+  <Widget param="" worker="БКЗ-27:1::отказ нагрузки апериодический" idWidget="" tabName="" tableName="" caption="Состояние отказ нагрузки апериодическое" viewWidg="" ctrlWidg="QPushButton кнопка 'Отправить';"/>
+</WindowClass>
+
+<WindowClass name="общее ext только сервис">
+  <Widget param="" worker="БКЗ-27:1::Данные об изделии запрос" idWidget="" tabName="" tableName="" caption="Запрос данных об изделии" viewWidg="" ctrlWidg="QCheckBox ch1 'Запрос номера';&#xa;QCheckBox ch2 'Запрос версии';&#xa;QPushButton btn 'Отправить';&#xa;Обработчик btn запросНомера = ch1;&#xa;Обработчик btn запросВерсии = ch2;"/>
+  <Widget param="" worker="БКЗ-27:1::вкл упр периодический" idWidget="" tabName="" tableName="" caption="Вкл/выкл каналы периодическое" viewWidg="" ctrlWidg="ГалочкиИКнопка гк       '' '' '' '' '' '' '' '' '' '' '' '' '' '  ' &#xa;                        '' '' '' '' '' '' '' '' '' '' '' '' '' '  ' &#xa;                        '' '' '' '' '' '' '' '  ' &#xa;                        '' '' '' '' '' '' '' '  ' &#xa;			'' '' '' ''&#xa;'Отправить';&#xa;Обработчик гк новыеСостояния = гк;"/>
+  <Widget param="" worker="БКЗ-27:1::вкл упр апериодический" idWidget="" tabName="" tableName="" caption="Вкл/выкл каналы апериодическое" viewWidg="" ctrlWidg="ГалочкиИКнопка гк       '' '' '' '' '' '' '' '' '' '' '' '' '' '  ' &#xa;                        '' '' '' '' '' '' '' '' '' '' '' '' '' '  ' &#xa;                        '' '' '' '' '' '' '' '  ' &#xa;                        '' '' '' '' '' '' '' '  ' &#xa;			'' '' '' ''&#xa;'Отправить';&#xa;Обработчик гк новыеСостояния = гк;"/>
+  <Widget param="" worker="БКЗ-27:1::сброс защиты периодический" idWidget="" tabName="" tableName="" caption="Сброс защиты периодическое" viewWidg="" ctrlWidg="QPushButton кнопка0 'Отправить 0';&#xa;QPushButton кнопка1 'Отправить 1';&#xa;Обработчик кнопка0 сброс = 0;&#xa;Обработчик кнопка1 сброс = 1;"/>
+  <Widget param="" worker="БКЗ-27:1::сброс защиты апериодический" idWidget="" tabName="" tableName="" caption="Сброс защиты апериодическое" viewWidg="" ctrlWidg="QPushButton кнопка0 'Отправить 0';&#xa;QPushButton кнопка1 'Отправить 1';&#xa;Обработчик кнопка0 сброс = 0;&#xa;Обработчик кнопка1 сброс = 1;"/>
+  <Widget param="" worker="БКЗ-27:1::ток канала запрос" idWidget="" tabName="" tableName="" caption="Ток канала" viewWidg="" ctrlWidg="РедакторыИКнопка рк '' '' '' '' 'Отправить';&#xa;Обработчик рк номераКаналов = рк;"/>
+</WindowClass>
+
+<WindowClass name="канал ext в эмуляторе">
+  <Widget param="[категория параметра или кадра]::Номер" worker="" idWidget="" tabName="[вкладка]" tableName="[таблица]" caption="Номер" viewWidg="QLabel" ctrlWidg=""/>
+  <Widget param="[категория параметра или кадра]::ВКЛ/ВЫКЛ" worker="" idWidget="" tabName="[вкладка]" tableName="[таблица]" caption="ВКЛ/ВЫКЛ" viewWidg="QLabel" ctrlWidg="Buttons b1 '0' '1'"/>
+  <Widget param="[категория параметра или кадра]::Исправность" worker="" idWidget="" tabName="[вкладка]" tableName="[таблица]" caption="Исправность" viewWidg="QLabel" ctrlWidg="Buttons b1 '0' '1'"/>
+  <Widget param="[категория параметра или кадра]::Короткое замыкание" worker="" idWidget="" tabName="[вкладка]" tableName="[таблица]" caption="Короткое замыкание" viewWidg="QLabel" ctrlWidg="Buttons b1 '0' '1'"/>
+  <Widget param="[категория параметра или кадра]::Перегрузка" worker="" idWidget="" tabName="[вкладка]" tableName="[таблица]" caption="Перегрузка" viewWidg="QLabel" ctrlWidg="Buttons b1 '0' '1'"/>
+  <Widget param="[категория параметра или кадра]::Отказ выхода" worker="" idWidget="" tabName="[вкладка]" tableName="[таблица]" caption="Отказ выхода" viewWidg="QLabel" ctrlWidg="Buttons b1 '0' '1'"/>
+  <Widget param="[категория параметра или кадра]::Отказ нагрузки" worker="" idWidget="" tabName="[вкладка]" tableName="[таблица]" caption="Отказ нагрузки" viewWidg="QLabel" ctrlWidg="Buttons b1 '0' '1'"/>
+  <Widget param="[категория параметра или кадра]::Ток канала" worker="" idWidget="" tabName="[вкладка]" tableName="[таблица]" caption="Ток канала" viewWidg="QLabel" ctrlWidg="EditButton b1 'Установить'"/>
+</WindowClass>
+
+<WindowClass name="канал ext в сервисе">
+  <Widget param="[категория параметра или кадра]::Номер" worker="" idWidget="" tabName="[вкладка]" tableName="[таблица]" caption="Номер" viewWidg="QLabel" ctrlWidg=""/>
+  <Widget param="[категория параметра или кадра]::ВКЛ/ВЫКЛ" worker="" idWidget="" tabName="[вкладка]" tableName="[таблица]" caption="ВКЛ/ВЫКЛ" viewWidg="QLabel" ctrlWidg=""/>
+  <Widget param="[категория параметра или кадра]::Исправность" worker="" idWidget="" tabName="[вкладка]" tableName="[таблица]" caption="Исправность" viewWidg="QLabel" ctrlWidg=""/>
+  <Widget param="[категория параметра или кадра]::Короткое замыкание" worker="" idWidget="" tabName="[вкладка]" tableName="[таблица]" caption="Короткое замыкание" viewWidg="QLabel" ctrlWidg=""/>
+  <Widget param="[категория параметра или кадра]::Перегрузка" worker="" idWidget="" tabName="[вкладка]" tableName="[таблица]" caption="Перегрузка" viewWidg="QLabel" ctrlWidg=""/>
+  <Widget param="[категория параметра или кадра]::Отказ выхода" worker="" idWidget="" tabName="[вкладка]" tableName="[таблица]" caption="Отказ выхода" viewWidg="QLabel" ctrlWidg=""/>
+  <Widget param="[категория параметра или кадра]::Отказ нагрузки" worker="" idWidget="" tabName="[вкладка]" tableName="[таблица]" caption="Отказ нагрузки" viewWidg="QLabel" ctrlWidg=""/>
+  <Widget param="[категория параметра или кадра]::Ток канала" worker="" idWidget="" tabName="[вкладка]" tableName="[таблица]" caption="Ток канала" viewWidg="QLabel" ctrlWidg=""/>
+</WindowClass>
+
+<WindowClass name="все каналы ext в эмуляторе">
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 1:1';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 2:2';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 3:3';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 4:4';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 5:5';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 6:6';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 7:7';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 8:8';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 9:9';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 10:10';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 11:11';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 12:12';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 13:13';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 14:14';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 15:15';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 16:16';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 17:17';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 18:18';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 19:19';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 20:20';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 21:21';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 22:22';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 23:23';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 24:24';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 25:25';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 26:26';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 27:27';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 28:28';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 29:29';&#xa;replace '[вкладка]' 'МВДС 20-1';&#xa;replace '[таблица]' 'т201';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 30:30';&#xa;replace '[вкладка]' 'МВДС 20-1';&#xa;replace '[таблица]' 'т201';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 31:31';&#xa;replace '[вкладка]' 'МВДС 20-1';&#xa;replace '[таблица]' 'т201';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 32:32';&#xa;replace '[вкладка]' 'МВДС 20-1';&#xa;replace '[таблица]' 'т201';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 33:33';&#xa;replace '[вкладка]' 'МВДС 20-1';&#xa;replace '[таблица]' 'т201';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 34:34';&#xa;replace '[вкладка]' 'МВДС 20-1';&#xa;replace '[таблица]' 'т201';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 35:35';&#xa;replace '[вкладка]' 'МВДС 20-1';&#xa;replace '[таблица]' 'т201';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 36:36';&#xa;replace '[вкладка]' 'МВДС 20-1';&#xa;replace '[таблица]' 'т201';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 37:37';&#xa;replace '[вкладка]' 'МВДС 20-2';&#xa;replace '[таблица]' 'т202';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 38:38';&#xa;replace '[вкладка]' 'МВДС 20-2';&#xa;replace '[таблица]' 'т202';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 39:39';&#xa;replace '[вкладка]' 'МВДС 20-2';&#xa;replace '[таблица]' 'т202';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 40:40';&#xa;replace '[вкладка]' 'МВДС 20-2';&#xa;replace '[таблица]' 'т202';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 41:41';&#xa;replace '[вкладка]' 'МВДС 20-2';&#xa;replace '[таблица]' 'т202';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 42:42';&#xa;replace '[вкладка]' 'МВДС 20-2';&#xa;replace '[таблица]' 'т202';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 43:43';&#xa;replace '[вкладка]' 'МВДС 20-2';&#xa;replace '[таблица]' 'т202';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 44:44';&#xa;replace '[вкладка]' 'МВДС 20-2';&#xa;replace '[таблица]' 'т202';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 45:45';&#xa;replace '[вкладка]' 'МВДС 40';&#xa;replace '[таблица]' 'т40';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 46:46';&#xa;replace '[вкладка]' 'МВДС 40';&#xa;replace '[таблица]' 'т40';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 47:47';&#xa;replace '[вкладка]' 'МВДС 40';&#xa;replace '[таблица]' 'т40';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в эмуляторе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 48:48';&#xa;replace '[вкладка]' 'МВДС 40';&#xa;replace '[таблица]' 'т40';" postModification=""/>
+</WindowClass>
+
+<WindowClass name="все каналы ext в сервисе">
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 1:1';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 2:2';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 3:3';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 4:4';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 5:5';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 6:6';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 7:7';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 8:8';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 9:9';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 10:10';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 11:11';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 12:12';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 13:13';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 14:14';&#xa;replace '[вкладка]' 'МВДС 7-1';&#xa;replace '[таблица]' 'т71';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 15:15';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 16:16';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 17:17';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 18:18';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 19:19';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 20:20';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 21:21';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 22:22';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 23:23';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 24:24';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 25:25';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 26:26';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 27:27';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 28:28';&#xa;replace '[вкладка]' 'МВДС 7-2';&#xa;replace '[таблица]' 'т72';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 29:29';&#xa;replace '[вкладка]' 'МВДС 20-1';&#xa;replace '[таблица]' 'т201';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 30:30';&#xa;replace '[вкладка]' 'МВДС 20-1';&#xa;replace '[таблица]' 'т201';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 31:31';&#xa;replace '[вкладка]' 'МВДС 20-1';&#xa;replace '[таблица]' 'т201';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 32:32';&#xa;replace '[вкладка]' 'МВДС 20-1';&#xa;replace '[таблица]' 'т201';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 33:33';&#xa;replace '[вкладка]' 'МВДС 20-1';&#xa;replace '[таблица]' 'т201';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 34:34';&#xa;replace '[вкладка]' 'МВДС 20-1';&#xa;replace '[таблица]' 'т201';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 35:35';&#xa;replace '[вкладка]' 'МВДС 20-1';&#xa;replace '[таблица]' 'т201';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 36:36';&#xa;replace '[вкладка]' 'МВДС 20-1';&#xa;replace '[таблица]' 'т201';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 37:37';&#xa;replace '[вкладка]' 'МВДС 20-2';&#xa;replace '[таблица]' 'т202';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 38:38';&#xa;replace '[вкладка]' 'МВДС 20-2';&#xa;replace '[таблица]' 'т202';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 39:39';&#xa;replace '[вкладка]' 'МВДС 20-2';&#xa;replace '[таблица]' 'т202';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 40:40';&#xa;replace '[вкладка]' 'МВДС 20-2';&#xa;replace '[таблица]' 'т202';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 41:41';&#xa;replace '[вкладка]' 'МВДС 20-2';&#xa;replace '[таблица]' 'т202';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 42:42';&#xa;replace '[вкладка]' 'МВДС 20-2';&#xa;replace '[таблица]' 'т202';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 43:43';&#xa;replace '[вкладка]' 'МВДС 20-2';&#xa;replace '[таблица]' 'т202';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 44:44';&#xa;replace '[вкладка]' 'МВДС 20-2';&#xa;replace '[таблица]' 'т202';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 45:45';&#xa;replace '[вкладка]' 'МВДС 40';&#xa;replace '[таблица]' 'т40';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 46:46';&#xa;replace '[вкладка]' 'МВДС 40';&#xa;replace '[таблица]' 'т40';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 47:47';&#xa;replace '[вкладка]' 'МВДС 40';&#xa;replace '[таблица]' 'т40';" postModification=""/>
+  <Import type="WindowClass" name="канал ext в сервисе" policy="" modification="replace '[категория параметра или кадра]' 'БКЗ-27:1::канал 48:48';&#xa;replace '[вкладка]' 'МВДС 40';&#xa;replace '[таблица]' 'т40';" postModification=""/>
+</WindowClass>
+
+<WindowClass name="БКЗ-27 ext Эмулятор">
+  <Import type="WindowClass" name="общее ext" policy="" modification="" postModification=""/>
+  <Import type="WindowClass" name="общее ext только эмулятор" policy="" modification="" postModification=""/>
+  <Import type="WindowClass" name="все каналы ext в эмуляторе" policy="" modification="" postModification=""/>
+</WindowClass>
+
+<WindowClass name="БКЗ-27 ext Сервис">
+  <Import type="WindowClass" name="общее ext" policy="" modification="set ctrlWidg ''" postModification=""/>
+  <Import type="WindowClass" name="общее ext только сервис" policy="" modification="" postModification=""/>
+  <Import type="WindowClass" name="все каналы ext в сервисе" policy="" modification="" postModification=""/>
+</WindowClass>
+
+</body>

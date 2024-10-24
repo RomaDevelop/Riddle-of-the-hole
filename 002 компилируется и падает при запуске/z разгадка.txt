@@ -1,0 +1,3 @@
+обращение к ui
+до ui->setupUi(this);
+в mainwindow.cpp

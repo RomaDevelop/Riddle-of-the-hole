@@ -1,0 +1,57 @@
+<body>
+
+<Channel name="Канал 1 сервис" type="CAN" params="number=0;regime=EFF;baud=1000;"/>
+
+<Channel name="Канал 2 сервис" type="CAN" params="number=2;regime=EFF;baud=1000;"/>
+
+<Channel name="Канал 1 эмулятор" type="CAN" params="number=1;regime=EFF;baud=1000;"/>
+
+<Channel name="Канал 2 эмулятор" type="CAN" params="number=3;regime=EFF;baud=1000;"/>
+
+<Object name="ch1mc1emul" type="Эмулятор" ObjectClass="БКЗ-27 внутренний" ProtocolClass="БКЗ-27 внутренний" Constants="БКЗ-27 канал 1 мк 1" channel="Канал 1 эмулятор" startSettings=""/>
+
+<Object name="ch1mc2emul" type="Эмулятор" ObjectClass="БКЗ-27 внутренний" ProtocolClass="БКЗ-27 внутренний" Constants="БКЗ-27 канал 1 мк 2" channel="Канал 1 эмулятор" startSettings=""/>
+
+<Object name="ch2mc1emul" type="Эмулятор" ObjectClass="БКЗ-27 внутренний" ProtocolClass="БКЗ-27 внутренний" Constants="БКЗ-27 канал 2 мк 1" channel="Канал 2 эмулятор" startSettings=""/>
+
+<Object name="ch2mc2emul" type="Эмулятор" ObjectClass="БКЗ-27 внутренний" ProtocolClass="БКЗ-27 внутренний" Constants="БКЗ-27 канал 2 мк 2" channel="Канал 2 эмулятор" startSettings=""/>
+
+<Window name="БКЗ-27 Эмулятор ch1mc1" WindowClass="БКЗ-27 Эмулятор внутренний" ObjectToConnect="ch1mc1emul" Other=""/>
+
+<Window name="//БКЗ-27 Эмулятор ch1mc2" WindowClass="БКЗ-27 Эмулятор внутренний" ObjectToConnect="ch1mc2emul" Other=""/>
+
+<Window name="//БКЗ-27 Эмулятор ch2mc1" WindowClass="БКЗ-27 Эмулятор внутренний" ObjectToConnect="ch2mc1emul" Other=""/>
+
+<Window name="//БКЗ-27 Эмулятор ch2mc2" WindowClass="БКЗ-27 Эмулятор внутренний" ObjectToConnect="ch2mc2emul" Other=""/>
+
+<Window name="//эмулятор_ВСК_блока" WindowClass="эмулятор_ВСК_блока" ObjectToConnect="ch1mc1emul" Other=""/>
+
+<Window name="эмулятор_каналы" WindowClass="эмулятор_каналы" ObjectToConnect="ch1mc1emul" Other=""/>
+
+<Object name="ch1mc1servis" type="Сервис" ObjectClass="БКЗ-27 внутренний" ProtocolClass="БКЗ-27 внутренний" Constants="БКЗ-27 канал 1 мк 1" channel="Канал 1 сервис" startSettings=""/>
+
+<Object name="ch1mc2servis" type="Сервис" ObjectClass="БКЗ-27 внутренний" ProtocolClass="БКЗ-27 внутренний" Constants="БКЗ-27 канал 1 мк 2" channel="Канал 1 сервис" startSettings=""/>
+
+<Object name="ch2mc1servis" type="Сервис" ObjectClass="БКЗ-27 внутренний" ProtocolClass="БКЗ-27 внутренний" Constants="БКЗ-27 канал 2 мк 1" channel="Канал 2 сервис" startSettings=""/>
+
+<Object name="ch2mc2servis" type="Сервис" ObjectClass="БКЗ-27 внутренний" ProtocolClass="БКЗ-27 внутренний" Constants="БКЗ-27 канал 2 мк 2" channel="Канал 2 сервис" startSettings=""/>
+
+<Window name="БКЗ-27 Сервис ch1mc1" WindowClass="БКЗ-27 Сервис внутренний" ObjectToConnect="ch1mc1servis" Other=""/>
+
+<Window name="//БКЗ-27 Сервис ch1mc2" WindowClass="БКЗ-27 Сервис внутренний" ObjectToConnect="ch1mc2servis" Other=""/>
+
+<Window name="//БКЗ-27 Сервис ch2mc1" WindowClass="БКЗ-27 Сервис внутренний" ObjectToConnect="ch2mc1servis" Other=""/>
+
+<Window name="//БКЗ-27 Сервис ch2mc2" WindowClass="БКЗ-27 Сервис внутренний" ObjectToConnect="ch2mc2servis" Other=""/>
+
+<Window name="//сервис_ВСК_блока" WindowClass="сервис_ВСК_блока" ObjectToConnect="ch1mc1servis;ch1mc2servis;ch2mc1servis;ch2mc2servis" Other=""/>
+
+<Window name="сервис_каналы" WindowClass="сервис_каналы" ObjectToConnect="ch1mc1servis" Other=""/>
+
+<Window name="//АРМ БКЗ-27" WindowClass="external BKZ27" ObjectToConnect="ch1mc1servis;ch1mc2servis;ch2mc1servis;ch2mc2servis;" Other=""/>
+
+<Other content="ControlPanel controlPanel"/>
+
+<Other content="Monitor monitor"/>
+
+</body>

@@ -1,0 +1,41 @@
+ 
+#include <iostream>
+using namespace std;
+ 
+class Array
+{
+static const int sizePriv {20};
+int data[sizePriv];
+public:
+static const int size {sizePriv};
+ 
+Array() 
+{ 
+	for(int i=0; i<size; i++) 
+	data[i] = 0; 
+}
+Array(int val5) 
+{ 
+	Array(); 
+	data[5] = val5; 
+}
+ 
+    void Print() { for(int i=0; i<size; i++) cout << data[i] << " "; cout << endl; } 
+};
+ 
+int main() {
+    
+    cout << "Hello world!\n" <<endl;
+    
+    Array obj1;
+    obj1.Print();
+    
+    Array obj2(555);
+    obj2.Print();
+ 
+    return 0;
+}
+ 
+загадка: почему в obj2 мусор??? можно ли починить?
+разгадка: потому что команда Array(); создаёт локальный объект, а не обрабатывает текущий
+вызвать делегирование конструктора

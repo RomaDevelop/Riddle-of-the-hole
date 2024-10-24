@@ -1,0 +1,28 @@
+запускаем, жмЄм сканирование, жмем массовое сканирование
+закрываем, вылетает крит
+
+разгадка 
+в checkboxdialog.цпп строка 37-49
+в коннект в л€мбду передаютс€ спарт указатели, из-за этого вылебают криты
+если передать обычне - всЄ норм
+скорее всего где-то в недрах коннекта уже после уничтожени€ переданных смартпт за каким-то хером идЄт к ним обращение, несмотр€ на то, что сигнал посылаетс€
+
+решение передавать в л€мбду обычные указатели
+
+
+	QListWidget *lwpt = lw.get();	// в л€бды коннекта нужно передавать обычные указатели, а не смарт, иначе вылетают криты при закрытии
+	QCheckBox *chAlpt = chAl.get();
+	QCheckBox *chNopt = chNo.get();
+
+	chAl->setChecked(true);
+	connect(chAl.get(),&QCheckBox::clicked,[lwpt, chAlpt](){
+		chAlpt->setChecked(true);
+		for(int i=0; i<lwpt->count(); i++)
+			lwpt->item(i)->setCheckState(Qt::Checked);
+	});
+
+	chNo->setChecked(false);
+	connect(chNo.get(),&QCheckBox::clicked,[lwpt, chNopt](){
+		chNopt->setChecked(false);
+		for(int i=0; i<lwpt->count(); i++)
+			lwpt->item(i)->setCheckState(Qt::Unchecked);

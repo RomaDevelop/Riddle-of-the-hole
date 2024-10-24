@@ -1,0 +1,53 @@
+Загадка
+
+1 Открываем любую конфигурацию
+2 Открываем любой файл конфигурации
+3 Дв.клик в дереве на любой итем файла
+Вылет!
+
+Разгадка
+При активации итема на итема вызывается 
+Editor::TreeItemActivated и внутри него
+Editor::FindConfigItemInTable
+а в этом методе идет работа с parent итема в дереве
+и parent мертв!
+
+Почему?
+В классе Config файлы ConfigFile хранятся по значению, а не указателю.
+	Но они хранятся в list!!! Что должно предотвратить их копирования и перемещения.
+	Но ежели в деструктор ConfigFile добавить вывод лога можно увидеть, что они таки удаляются!
+	В какой момент? Editor.cpp строка 442 
+		config.files.push_back(ConfigFile(fileName,file.readAll()));
+		
+Проблему можно решить храня ConfigFile по указателю
+Или зменить push_back на emplace_back
+	config.files.emplace_back(fileName,file.readAll());
+	
+
+Упрощенный пример:
+
+#include <iostream>
+#include <list>
+#include <vector>
+using namespace std;
+
+class A
+{
+public:
+    A() { cout << "A()\n"; }
+    ~A() { cout << "~A()\n"; }
+    A(const A& src) { cout << "copy A\n"; }
+    A(A&& src) { cout << "move A\n"; }
+};
+
+int main() {
+
+    list<A> l1;
+    l1.push_back(A());
+
+    vector<A> v1;
+    v1.push_back(A());
+
+    cout << "\nend\n";
+    return 0;
+}

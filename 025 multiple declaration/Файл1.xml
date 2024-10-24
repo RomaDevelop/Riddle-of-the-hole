@@ -1,0 +1,39 @@
+<body>
+
+<ObjectClass name="Канал">
+ <Param name="вкл" id_="id" category="cat" type="" addProterties="add"/>
+ <Param name="ток" id_="" category="" type="ulong {0}" addProterties=""/>
+ <Param name="уставка" id_="" category="" type="ulong {0}" addProterties=""/>
+</ObjectClass>
+
+<ObjectClass name="МВДС">
+ <Param name="Модуль" id_="" category="" type="" addProterties=""/>
+ <Import type = "ObjectClass" name = "Канал"/>
+ <Import type = "ObjectClass" name = "Канал"/>
+ <Import type = "ObjectClass" name = "Канал"/>
+</ObjectClass>
+
+<ObjectClass name="БКЗ-27">
+ <Import type = "ObjectClass" name = "МВДС"/>
+ <Import type = "ObjectClass" name = "МВДС"/>
+ <Import type = "ObjectClass" name = "МВДС"/>
+</ObjectClass>
+
+<ProtocolClass name="Протокол 1">
+ <FrameWorker name="Кадр 1" id_="id" frame="frame" category="cat" type="type" variables="varsss" addProterties="addp"/>
+</ProtocolClass>
+
+<Constants name="Константы">
+ <Constant name="name" enc="bin" value="0000000000" bitSize="10" category="cat" describtion="desc"/>
+ <Constant name="1" enc="hex" value="undefined" bitSize="0" category="2" describtion="3"/>
+</Constants>
+
+<WindowClass name="окно11111">
+ <Widget ctrlWidg="ctrl" tableName="table" caption="capti" idWidget="idw" viewWidg="view" tabName="tab" idParam="idP"/>
+</WindowClass>
+
+<Object name="" type="" ObjectClass="" ProtocolClass="" Constants="" channel="" regime="" baud="" startSettings=""/>
+
+<Window name="" WindowClass="" ObjectToConnect=""/>
+
+</body>

@@ -1,0 +1,69 @@
+<body>
+
+<ObjectClass name="БКЗ-27 ext">
+  <Param name="Состояние устройства" category="БКЗ-27:1" id="" type="Эмулятор ushort {0};Сервис ushort" addProterties=""/>
+  <Param name="Отказ Uвх" category="БКЗ-27:1" id="" type="Эмулятор bool {0};Сервис bool" addProterties=""/>
+  <Param name="Заводской номер" category="БКЗ-27:1" id="" type="Эмулятор ulong {123456789};Сервис ulong" addProterties=""/>
+  <Param name="Версия ПО" category="БКЗ-27:1" id="" type="Эмулятор ulong {987654321};Сервис ulong" addProterties=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 1:1';&#xa;replace 'инициализацияНомер' '1';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 2:2';&#xa;replace 'инициализацияНомер' '2';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 3:3';&#xa;replace 'инициализацияНомер' '3';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 4:4';&#xa;replace 'инициализацияНомер' '4';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 5:5';&#xa;replace 'инициализацияНомер' '5';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 6:6';&#xa;replace 'инициализацияНомер' '6';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 7:7';&#xa;replace 'инициализацияНомер' '7';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 8:8';&#xa;replace 'инициализацияНомер' '8';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 9:9';&#xa;replace 'инициализацияНомер' '9';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 10:10';&#xa;replace 'инициализацияНомер' '10';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 11:11';&#xa;replace 'инициализацияНомер' '11';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 12:12';&#xa;replace 'инициализацияНомер' '12';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 13:13';&#xa;replace 'инициализацияНомер' '13';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 14:14';&#xa;replace 'инициализацияНомер' '14';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 15:15';&#xa;replace 'инициализацияНомер' '15';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 16:16';&#xa;replace 'инициализацияНомер' '16';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 17:17';&#xa;replace 'инициализацияНомер' '17';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 18:18';&#xa;replace 'инициализацияНомер' '18';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 19:19';&#xa;replace 'инициализацияНомер' '19';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 20:20';&#xa;replace 'инициализацияНомер' '20';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 21:21';&#xa;replace 'инициализацияНомер' '21';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 22:22';&#xa;replace 'инициализацияНомер' '22';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 23:23';&#xa;replace 'инициализацияНомер' '23';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 24:24';&#xa;replace 'инициализацияНомер' '24';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 25:25';&#xa;replace 'инициализацияНомер' '25';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 26:26';&#xa;replace 'инициализацияНомер' '26';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 27:27';&#xa;replace 'инициализацияНомер' '27';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 28:28';&#xa;replace 'инициализацияНомер' '28';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 29:29';&#xa;replace 'инициализацияНомер' '29';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 30:30';&#xa;replace 'инициализацияНомер' '30';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 31:31';&#xa;replace 'инициализацияНомер' '31';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 32:32';&#xa;replace 'инициализацияНомер' '32';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 33:33';&#xa;replace 'инициализацияНомер' '33';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 34:34';&#xa;replace 'инициализацияНомер' '34';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 35:35';&#xa;replace 'инициализацияНомер' '35';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 36:36';&#xa;replace 'инициализацияНомер' '36';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 37:37';&#xa;replace 'инициализацияНомер' '37';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 38:38';&#xa;replace 'инициализацияНомер' '38';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 39:39';&#xa;replace 'инициализацияНомер' '39';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 40:40';&#xa;replace 'инициализацияНомер' '40';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 41:41';&#xa;replace 'инициализацияНомер' '41';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 42:42';&#xa;replace 'инициализацияНомер' '42';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 43:43';&#xa;replace 'инициализацияНомер' '43';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 44:44';&#xa;replace 'инициализацияНомер' '44';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 45:45';&#xa;replace 'инициализацияНомер' '45';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 46:46';&#xa;replace 'инициализацияНомер' '46';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 47:47';&#xa;replace 'инициализацияНомер' '47';" postModification=""/>
+  <Import type="ObjectClass" name="канал" policy="" modification="set category 'БКЗ-27:1::канал 48:48';&#xa;replace 'инициализацияНомер' '48';" postModification=""/>
+</ObjectClass>
+
+<ObjectClass name="канал">
+  <Param name="Номер" category="" id="" type="ubyte {инициализацияНомер}" addProterties=""/>
+  <Param name="ВКЛ/ВЫКЛ" category="" id="" type="Эмулятор bool {0}; Сервис bool;" addProterties=""/>
+  <Param name="Исправность" category="" id="" type="Эмулятор bool {1}; Сервис bool;" addProterties=""/>
+  <Param name="Короткое замыкание" category="" id="" type="Эмулятор bool {0}; Сервис bool;" addProterties=""/>
+  <Param name="Перегрузка" category="" id="" type="Эмулятор bool {0}; Сервис bool;" addProterties=""/>
+  <Param name="Отказ выхода" category="" id="" type="Эмулятор bool {0}; Сервис bool;" addProterties=""/>
+  <Param name="Отказ нагрузки" category="" id="" type="Эмулятор bool {0}; Сервис bool;" addProterties=""/>
+  <Param name="Ток канала" category="" id="" type="Эмулятор ushort {0}; Сервис ushort;" addProterties=""/>
+</ObjectClass>
+
+</body>

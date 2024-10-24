@@ -1,0 +1,19 @@
+<body>
+
+<Channel name="Основной" type="CAN" params="number=0;regime=EFF;baud=1000;"/>
+
+<Channel name="Канал эмулятор" type="CAN" params="number=1;regime=EFF;baud=1000;"/>
+
+<Object name="эмулятор" type="Эмулятор" ObjectClass="тест_АЗТ" ProtocolClass="тест_АЗТ" Constants="ID" channel="Канал эмулятор" startSettings=""/>
+
+<Object name="сервис" type="Сервис" ObjectClass="тест_АЗТ" ProtocolClass="тест_АЗТ" Constants="ID" channel="Основной" startSettings=""/>
+
+<Window name="эмулятор БКЗ-27 тест_АЗТ" WindowClass="эмулятор" ObjectToConnect="эмулятор" Other=""/>
+
+<Window name="БКЗ-27 тест АЗТ" WindowClass="сервис" ObjectToConnect="сервис" Other="width = 1050; height = 100; fontSize = 12;"/>
+
+<Other content="ControlPanel controlPanel"/>
+
+<Other content="Monitor monitor"/>
+
+</body>

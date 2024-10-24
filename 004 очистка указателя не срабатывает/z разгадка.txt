@@ -1,0 +1,17 @@
+
+в marathonchannel.cpp
+
+void StopTread(thread *th, bool &stopFlag)
+{
+	stopFlag = true;
+	th->join();
+	stopFlag = false;
+	delete th;
+	qDebug() << th << thReadMsgCnt;
+	th = nullptr;
+	qDebug() << th << thReadMsgCnt;
+}
+
+в функцию StopTread передаётся указатель, указателю ставится nullptr
+но изначальный указатель не меняется. Указатель позволяет работать с данны расположенными по его адресу.
+Но при передаче указателя в функцию создаётся его копия ссылающаяся на тот же адрес. Нулл записывается в копию.
