@@ -1,0 +1,22 @@
+если создать потомка QWidget
+CustomWidget *inner2 = new CustomWidget(w);
+
+окрасить его цветом 
+inner2->setStyleSheet("background-color: #FFFDD0; border: 1px solid black; padding: 5px;");
+
+и пытаться его вывести на другом виджете
+QWidget *w = new QWidget;
+
+то он не отображается
+
+сли на не разместить кнопки
+auto btn = new QPushButton("sdsd",inner2);
+кнопки будут видны
+
+при это если это не наследник 
+QWidget *inner1 = new QWidget(w);
+то все норм
+
+
+Почему так до конца не выяснил
+Решение - не использовать потомки в этих целях
